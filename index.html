@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css基础大全</title>
+    <link rel="stylesheet" href="index_style.css" />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="./font_61vvv90vkii/iconfont.css">
+    <!-- <style>
+      /* 页头 */
+      #header {
+        height: 100px;
+
+        background-image: url(img/logo（1）.png);
+        background-repeat: no-repeat;
+        background-position: 35px -70px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+    </style> -->
+  </head>
+  <body>
+<!-- 预设样式 -->
+
+<!-- 回到顶部 -->
+<!-- <p><a href="#">回到顶部</a></p> -->
+
+<!-- 小标题 -->
+<!-- <p>
+  <strong><u>[3.1]类选择器</u></strong>
+</p> -->
+
+<!-- 源码或文本框预设 -->
+<!-- <textarea cols="25" rows="10" readonly="readonly">
+  css主要用于设置html页面中的文本内容（字体，大小，对齐方式等），
+  图片的外形（宽度，边框样式，边框边距等）以及版面的布局和外观显示样式。【网页的美容师css】
+</textarea
+    > -->
+
+    <!-- 
+      锚点
+    <a name="" ></a> 
+     -->
+
+<!-- 类名 -->
+<!-- 1.加红 tored -->
+<!-- 2.副标题 subtitle -->
+
+<div id="container">
+  
+    <!-- 页头logo -->
+    <div id="header">
+      <input type="text" placeholder="请输入要搜索的知识点" />
+    </div>
+    <div id="nav_first" >
+
+      <a href="https://www.runoob.com/" target="_blank">菜鸟教程</a>
+      <a href="https://www.w3school.com.cn/" target="_blank">w3school</a>
+      <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a>
+      <a href="https://weibo.com/" target="_blank">微博</a>
+      <a href="https://www.csdn.net/" target="_blank">csdn</a>
+      <a href="#" target="_blank">资源推荐</a>
+      <a href="#" target="_blank">实例应用</a>
+      <a href="#" target="_blank">教程视频</a>
+      <a href="../html笔记网页版/index.html" target="_blank">html笔记</a>
+
+      <a
+        href="https://blog.csdn.net/weixin_57921210?spm=1000.2115.3001.5343"
+        target="_blank"
+        >联系作者</a
+      >
+    </div>
+    <div id="nav_tow">
+      <!-- class="aggravate" -->
+      <!-- 导航栏字体加重 -->
+      <ul>
+        <li><a href="#chapter-1" class="aggravate">第一章 CSS基础</a></li>
+        <li><a href="#css1">(1)css初识</a></li>
+        <li><a href="#css2">(2)css语法规范</a></li>
+        <li><a href="#css3">(3)选择器</a></li>
+        <li><a href="#css4">(4)字体属性</a></li>
+        <li><a href="#css5">(5)文本属性</a></li>
+        <li><a href="#css6">(6)书写位置</a></li>
+        <li><a href="#css7">(7)背景</a></li>
+        <li><a href="#css8">(8)页面布局</a></li>
+        <li><a href="#css-float">(9)浮动(float)</a></li>
+        <li><a href="#css-position">(10)定位(position)</a></li>
+        <li><a href="#css-show">(11)显示隐藏元素</a>
+        </li>
+        <li><a href="#practice-css">(12)知识点练习总结</a></li>
+        <li><a href="#chapter-2" class="aggravate">第二章 css高级技巧</a></li>
+        <li><a href="">(13)精灵图</a></li>
+  <li><a href="#css-iconfont">(14)字体图标</a></li>
+  <li><a href="#css-triangle">(15)css三角</a></li>
+  <li><a href="#css-userlook">(16)用户界面样式</a></li>
+  <li><a href="#css-vertical--align">(17)vertical-align属性的应用</a></li>
+  <li><a href="#css_Text overflow">(18)溢出的文字省略号显示</a></li>
+  <li><a href="#css_layout">(19)常见的布局技巧</a></li>
+        <li><a href="#chapter-3" class="aggravate">第三章 HTML5+CSS3的应用</a></li>
+        <li><a href=""></a></li>
+        <li><a href="#"></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </div>
+    
+
+
+    <!-- 回到顶部 -->
+<div class="totop">
+  <ul>
+    <li>
+    <span class="iconfont icon-gerentouxiang_o"></span>
+    <p></p>
+    <a href="" target="_blank">个人账号</a>
+      <!-- <p>个人账号</p> -->
+    </li>
+    <li>
+      <span class="iconfont icon-gonggao"></span>
+      <p>公告</p>
+      <div class="gonggao">
+        <p class="tored">公告</p>
+<p>1.此网站是某人的css笔记</p>
+<p>2.链接的案例浏览器右键可查看源码，就可以白嫖代码了。</p>
+<p>3.网站有些链接还没正确的地址</p>
+<p>4.可能有bug或者需要改进的地方，可以从最底部的邮箱地址联系我哦，欢迎反馈。</p>
+
+<img src="./img/cat1.gif" alt="">
+      </div>
+    </li>
+    <li>
+      <a href="">
+        <span class="iconfont icon-huidaodingbu"></span>
+        <p>回到顶部</p>
+      </a>
+      
+      <!-- <a href="#">回到顶部</a> -->
+  <!-- <p>回到顶部</p> -->
+</li>
+  </ul>
+</div>
+    
+    <div id="main">
+
+
+
+
+      <div class="css_1 csstext" >
+        <h1>第一章 CSS基础</h1>
+        <a name="chapter-1"></a>
+        <!--css导读-->
+        <!--css作用-->
+        <a name="css1"></a>
+        <h3>（1）css初识</h3>
+       
+        <ul>
+          <li>html主要做结构，显示元素内容</li>
+          
+          <li>css美化HTML，布局网页</li>
+          <li>结构与样式分离</li>
+        </ul>
+        <textarea cols="25" rows="10" readonly="readonly">
+      css主要用于设置html页面中的文本内容（字体，大小，对齐方式等），
+      图片的外形（宽度，边框样式，边框边距等）以及版面的布局和外观显示样式。【网页的美容师css】
+    </textarea
+        >
+
+        
+      </div>
+
+      <div class="csstext">
+        <a name="css2"></a>
+        <!--css语法规范-->
+        <h3>（2）css语法规范</h3>
+        <h4>规则构成</h4>
+
+        <ul>
+          <li>选择器</li>
+          <li>声明样式</li>
+        </ul>
+        <!--小实例-->
+        <div id="csstext_p">
+          <p>有点意思</p>
+        </div>
+        <!--分隔方式-->
+        <p>属性与属性值之间用 : 每组键值对 ; 分隔</p>
+        <!--源码-->
+        <textarea rows="12" cols="40" readonly="readonly">
+      <style>
+      /*语法规范练习*/
+      /*选择器{样式:声明;}*/
+      /*给谁改样式{改什么样式}*/
+      #csstext_p p {
+          /*更改<p>颜色为深红*/
+          color:darkred;
+          /*更改字体大小为12像素*/
+          font-size:12px;
+      }
+
+          /*通配符选择器*/
+          * {
+              line-height: 2;
+          }
+      </style>
+</textarea
+        >
+
+        <!--代码风格推荐-->
+        <p><em>代码风格样式规范</em></p>
+        <p>1.紧凑式</p>
+        <textarea cols="60" readonly="readonly">
+  #csstext_p p { color:darkred; font-size:12px;}
+</textarea
+        >
+        <p>2.展开式</p>
+        <textarea cols="60" rows="8" readonly="readonly">
+  #csstext_p p {
+          /*更改<p>颜色为深红*/
+          color:darkred;
+          /*更改字体大小为12像素*/
+          font-size:12px;
+      }
+</textarea
+        >
+        <p><strong>1.用展开式来写代码，用小写字母来写css代码</strong></p>
+        <p><strong>2.属性值前面，冒号后面，保留空格</strong></p>
+        <p><strong>3.选择器和大括号中间保留空格</strong></p>
+      </div>
+      <!-- 3）选择器 -->
+      <div class="css_3 csstext">
+        <a name="css3"></a>
+        <!--选择器-->
+        <h3>（3）选择器</h3>
+        <ul>
+          <li>基础选择器--由单个选择器组成</li>
+          <ul>
+            <li>3.1-标签选择器</li>
+            <li>3.2-类选择器</li>
+            <li>3.3-id选择器</li>
+            <li>3.4-通配符选择器</li>
+          </ul>
+          <li>复合选择器</li>
+          <ul>
+            <li>后代选择器</li>
+            <li>子代选择器</li>
+            <li>并集选择器</li>
+            <li>链接伪类选择器</li>
+            <li>:focus 选择器</li>
+          </ul>
+        </ul>
+        <!--标签选择器-->
+
+        <!--类选择器-->
+        <p>
+          <strong><u>[3.1]类选择器</u></strong>
+        </p>
+        <p>使用class来定义一个类</p>
+        <h4>注意：</h4>
+        <p><strong>1.类选择器使用"."(英文点号)</strong></p>
+        <p><strong>2.可以理解给标签起了个名字，调用就是点名使用</strong></p>
+        <p>
+          <strong>3.如果名字比较长，可以用"-"来分隔，例如"class-one"</strong>
+        </p>
+        <p><strong>4.不要用纯数字，命名要有意义，尽量用英文</strong></p>
+        <!--例子-->
+        <p>example:</p>
+        <ul>
+          <li class="color_red_eg">冰雨</li>
+          <li>忆江南</li>
+        </ul>
+        <div class="color_red_eg">
+          <p><u>我不是例子</u></p>
+        </div>
+        <textarea rows="6" cols="45" readonly="readonly">
+<ul>
+<li class="color_red_eg">冰雨</li>
+<li>忆江南</li>
+</ul>
+</textarea
+        >
+        <p>注：详情使用方法看源码</p>
+
+        <!--类选择器口诀：样式点定义，结构类（class）调用 一个或多个 开发最常用-->
+        <p>
+          <em
+            >&nbsp;&nbsp;&nbsp;&nbsp;
+            类选择器口诀：样式点定义，结构类（class）调用 一个或多个
+            开发最常用</em
+          >
+        </p>
+
+        <h4>类名特殊使用-多类名:</h4>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;一个标签可以设置多个类名，中间要加空格分隔<br />
+          无论使用哪个名字都可以设置样式，样式是同时使用的。
+        </p>
+        <!--<div class="color_red_eg red">-->
+        <!--    <p><u>我不是例子</u></p>-->
+        <!--</div>-->
+
+        <p><strong>使用场景:</strong></p>
+        <p>可以同时设置重复的样式，通常会在开发中使用,方便后期修改代码。</p>
+        <textarea cols="45" rows="4" readonly="readonly">
+  <!--<div class="color_red_eg red">-->
+  <!--    <p><u>我不是例子</u></p>-->
+  <!--</div>-->
+</textarea
+        >
+        <!--id选择器-->
+        <p>
+          <strong><u>[3.2]id选择器</u></strong>
+        </p>
+        <p>
+          <em
+            >&nbsp;&nbsp;&nbsp;&nbsp;简介：id选择器可以为标有特定id的html元素指定样式,用id属性开设置id选择器<br />
+            ,css 中id选择器以"#",来定义。</em
+          >
+        </p>
+        <p><em>1--id不能象class一样重复命名，一个html中的id是惟一的</em></p>
+        <p>
+          <em
+            >2--类选择器在修改样式中用的最多，id选择器一般用于页面唯一性的元素上，经常和js一起使用。</em
+          >
+        </p>
+        <!--id选择器例子-->
+        <!--这个id是这个页面里的唯一一个，不能重复使用-->
+        <p id="id_text_1">--id选择器--</p>
+        <!--id选择器口诀：样式#定义，结构id调用，只能调用一次，别人切勿使用。-->
+        <p class="Pithy_id">
+          <em
+            >id选择器口诀：样式#定义，结构id调用，只能调用一次，别人切勿使用。</em
+          >
+        </p>
+        <!--源码展示-->
+        <p>源码展示</p>
+        <textarea rows="10" cols="35" readonly="readonly">
+  html部分
+  <p id="id_text_1">--id选择器--</p>
+
+  css部分
+  #id_text_1 {
+          size: 15px;
+          color: #03a9f4;
+  }
+</textarea
+        >
+        <!--通配符选择器-->
+        <p>
+          <strong><u>[3.3]通配符选择器</u></strong>
+        </p>
+        <p><em>简介：使用"*" 使用，可以修改整个页面的所有属性。</em></p>
+        <p>语法：</p>
+        <textarea cols="25" rows="5" readonly="readonly">
+  * {
+  属性值1：属性值2
+  ...
+  }
+</textarea
+        >
+        <ul>
+          <li>通配符选择器不需要调用，自动给所有元素使用样式。</li>
+          <li>
+            特殊情况下才会使用，后面讲解使用场景(一下是清除所有元素标签的内外边距)
+          </li>
+        </ul>
+        <!--实例-->
+        <textarea cols="26" rows="7" readonly="readonly">
+  <style>
+       * {
+           margin: 0;
+           padding: 0;
+       }
+  </style>
+</textarea
+        >
+
+        <p>
+          <strong><u>[3.4]标签选择器</u></strong>
+        </p>
+        <p><em>可以单独设置一类标签的格式。</em></p>
+        <p>语法：</p>
+        <textarea rows="6" cols="35" readonly="readonly">
+  <style>
+      h1 {
+          color: white;
+      }
+  </style>
+</textarea
+        >
+
+        <!--基础选择器总结-->
+        <p>
+          <strong><u>[3.5]基础选择器总结</u></strong>
+        </p>
+
+        <table border="1">
+          <thead>
+            <!--    1-->
+            <tr>
+              <td>基础选择器</td>
+              <td>作用</td>
+              <td>特点</td>
+              <td>使用情况</td>
+              <td>用法</td>
+            </tr>
+          </thead>
+          <tbody>
+            <!--    第一行-->
+            <tr>
+              <td>标签选择器</td>
+              <td>可以选出所有相同的标签，比如p</td>
+              <td>不能差异化选择</td>
+              <td>较多</td>
+              <td>p { color:red}</td>
+            </tr>
+            <!--    第二行-->
+            <tr>
+              <td>类选择器</td>
+              <td>可以选出1个或多个标签</td>
+              <td>可以根据需求选择</td>
+              <td>非常的多</td>
+              <td>.nav {color:red}</td>
+            </tr>
+
+            <tr>
+              <td>id选择器</td>
+              <td>可以选出</td>
+              <td>可以根据需求选择</td>
+              <td>非常的多</td>
+              <td>.nav {color:red}</td>
+            </tr>
+
+            <tr>
+              <td>通配符选择器</td>
+              <td>选则所有的标签</td>
+              <td>选择的太多，有部分不需要</td>
+              <td>非特殊情况使用</td>
+              <td>* {color:red}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <strong><u>[3.6]链接伪类选择器</u></strong>
+        </p>
+        <ul>
+          <li>a:hover 选择所有未访问的链接</li>
+          <li>a:visited 选择所有已被访问的链接</li>
+          <li>a:link 选择鼠标指针位于其上的链接</li>
+          <li>a:active 选择活动的链接（鼠标按下未弹起的链接）</li>
+        </ul>
+        <p>注意事项:</p>
+        <ol>
+          <li>为了确保生效，按照<span class="tored">LVHA</span>顺序声明:link - :visited - :hover - :active.</li>
+          <li>记忆法 love hate 或者lv宝宝hao</li>
+          <li>真正的开发中必须要按顺序使用伪类选择器</li>
+          <li>因为a链接自带样式，所以在使用中要单独指定样式</li>
+        </ol>
+<p>实际开发实际用法:</p>
+<ol>
+  <li>不是个链接伪类都要使用到</li>
+  <li>一般使用要先声明a的样式，后面紧接相应的伪类选择器样式</li>
+</ol>
+
+<p>
+  <strong><u>[3.7]:focus伪类选择器</u></strong>
+</p> 
+<p><span class="tored">:focus伪类选择器</span>用于选取获得焦点的表单元素</p>
+<p>焦点就是光标，一般情况 <input> 类表单元素才能获取，因此这个选择器也主要真对表单元素来说。</p>
+<p>用于设置光标在使用表单时的样式变化</p>
+<p>把获得光标大的input表单元素选取出来。</p>
+<p>语法：</p>
+<textarea name="" id="" cols="35" rows="5"  readonly="readonly">
+input:focus {
+   background-color:pink;
+   color:red;
+}
+</textarea>
+
+        <p>
+          <strong><u>[3.8]进阶选择器总结</u></strong>
+        </p>
+        <table border="1">
+          <thead>
+            <!--    1-->
+            <tr>
+              <td>选择器</td>
+              <td>作用</td>
+              <td>特点</td>
+              <td>使用情况</td>
+              <td>隔开符号及用法</td>
+            </tr>
+          </thead>
+          <tbody>
+            <!--    第一行-->
+            <tr>
+              <td>后代选择器</td>
+              <td>用来选择后代元素</td>
+              <td>可以是子孙后代</td>
+              <td>较多</td>
+              <td>符号是空格 .nav a</td>
+            </tr>
+            <!--    第二行-->
+            <tr>
+              <td>子代选择器</td>
+              <td>选择最近一级元素</td>
+              <td>只选亲儿子</td>
+              <td>较少</td>
+              <td>符号是大于 .nav>p</td>
+            </tr>
+
+            <tr>
+              <td>并集选择器</td>
+              <td>选择某些相通样式的元素</td>
+              <td>可以用于集体声明</td>
+              <td>较多</td>
+              <td>符号是逗号 .nav,header</td>
+            </tr>
+
+            <tr>
+              <td>链接伪类选择器</td>
+              <td>选择不同状态的链接</td>
+              <td>跟链接相关</td>
+              <td>较多</td>
+              <td>重点记住a{}和 a:hover 实际开发的写法</td>
+            </tr>
+            <tr>
+              <td>:focus伪类选择器</td>
+              <td>选择获得光标的表单</td>
+              <td>跟表单相关</td>
+              <td>较少</td>
+              <td>input:focus 记住这个写方法</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4)字体属性 -->
+      <div class="css_4 csstext">
+        <a name="css4"></a>
+        <h3>(4)css的字体属性</h3>
+        <ul>
+          <li>font-family 设置字体</li>
+          <li>font-size 字号大小</li>
+          <li>font-weight 字体粗细</li>
+          <li>font-style 字体样式(斜体，下划线等)</li>
+        </ul>
+        <p>具体看笔记</p>
+        <a href="./textes/笔记.html" target="_blank">字体样式</a>
+      </div>
+      <!-- 5)文本属性 -->
+      <div class="css_5 csstext">
+        <a name="css5"></a>
+        <h3>(5)css文本属性</h3>
+        <!--    使用css设置文本-->
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;一下属性可以设置文本的外观，比如文本颜色，对齐文本，装饰文本，，文本缩进，行间距等操作。
+        </p>
+        <ul>
+<li><a href="#outlne-1">[5.1]大纲</a></li>
+<li><a href="#text-color">[5.2]文本颜色</a></li>
+<li><a href="#text-align">[5.3]对齐文本</a></li>
+<li><a href="#[5.4]装饰文本">[5.4]装饰文本</a></li>
+<li><a href="#[5.5]首行缩进">[5.5]首行缩进</a></li>
+<li><a href="#[5.6]设置行间距">[5.6]设置行间距</a></li>
+
+        </ul>
+        <a name="outlne-1"></a>
+        <p>
+          <strong><u>[5.1]大纲</u></strong>
+        </p>
+        <ol type="1">
+          <li>文本颜色--color</li>
+          <li>对齐文本--text-align</li>
+          <li>装饰文本--text-decoration</li>
+        </ol>
+        <!--    文本颜色-->
+        <a name="text-color"></a>
+        <p>
+          <strong><u>[5.2]文本颜色</u></strong>
+        </p>
+        <p>值：</p>
+        <ul>
+          <li>预定义的颜色值，即颜色英文名</li>
+          <li>各种颜色的16进制[开发中最常用]</li>
+          <li>RGB代码(rgb(255,0,0)或rgb(100%,0%,0%))</li>
+        </ul>
+        <textarea cols="30" rows="10" readonly="readonly">
+  <style>
+.align_text_1 {
+  color: #03a9f4;
+}
+  </style>
+  <div class="align_text_1">
+测试
+  </div>
+</textarea
+        >
+        <!--对齐文本-->
+        <a name="text-align"></a>
+        <p>
+          <strong><u>[5.3]对齐文本</u></strong>
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;<font color="red">text-align</font
+          >属性用于设置设置文本元素内文本内容的水平对齐方式。
+        </p>
+        <p>值：</p>
+        <ol>
+          <li>left --文本左对齐（默认）</li>
+          <li>right --右对齐</li>
+          <li>cneter --居中对齐</li>
+        </ol>
+        <!--装饰文本-->
+        <a name="[5.4]装饰文本"></a>
+        <p>
+          <strong><u>[5.4]装饰文本</u></strong>
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;<font color="red">text-decoration</font
+          >属性规定添加到文本额修饰，可以给文本添加下划线，删除线，上划线等。
+        </p>
+        <p>值：</p>
+        <ol>
+          <li>none -- 默认，没有装饰线(最常用)</li>
+          <li>underline -- 下划线，链接自带(常用)</li>
+          <li>overline -- 上划线，几乎不用</li>
+          <li>line-through -- 删除线，(不常用)</li>
+        </ol>
+        <span>没有装饰线-none&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span style="text-decoration: underline"
+          >underline-下划线&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span style="text-decoration: overline"
+          >overline -- 上划线&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span style="text-decoration: line-through"
+          >&nbsp;&nbsp;&nbsp;&nbsp;line-through -- 删除线</span
+        >
+        <p>源码：</p>
+        <textarea cols="35" rows="12" readonly="readonly">
+<span>没有装饰线-none&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style="text-decoration: underline">underline-下划线&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style="text-decoration: overline">overline -- 上划线&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style="text-decoration: line-through">&nbsp;&nbsp;&nbsp;&nbsp;line-through -- 删除线</span>
+  </textarea
+        >
+        <p>用途有一个：可以去掉超链接自带的下划线</p>
+        <a
+          href="https://www.bilibili.com/"
+          target="_blank"
+          style="text-decoration: none"
+          >这是一个超链接</a
+        >
+        <textarea cols="90" readonly="readonly">
+      <a href="https://www.bilibili.com/" style="text-decoration: none">这是一个超链接</a>
+  </textarea
+        >
+        <!-- 文本缩进 -->
+        <a name="[5.5]首行缩进"></a>
+        <p>
+          <strong><u>[5.5]首行缩进</u></strong>
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;<font color="red">text-indent</font
+          >用来设置段落中的首行缩进
+        </p>
+        <p>语法：text-indent: 2em/20px</p>
+        <p>值：</p>
+        <ul>
+          <li>20px(可以设置成多少像素)</li>
+          <li>
+            2em(也可以设置成相比第二行多少个字的距离)<br />em是一个相对单位，就是当前元素的(font-size)一个文字的大小，
+          </li>
+        </ul>
+        <p style="text-indent: 2em">
+          通过使用 CSS 我们可以大大提升网页开发的工作效率！ 在我们的 CSS
+          教程中，您会学到如何使用 CSS 同时控制多重网页的样式和布局。
+        </p>
+        <p>源码：</p>
+        <textarea cols="60" rows="8" readonly="readonly">
+      <p style="text-indent: 2em">
+          通过使用 CSS 我们可以大大提升网页开发的工作效率！ 在我们的 CSS
+          教程中，您会学到如何使用 CSS 同时控制多重网页的样式和布局。
+        </p>
+  </textarea
+        >
+
+        <!-- 行间距 -->
+        <a name="[5.6]设置行间距"></a>
+        <p>
+          <strong><u>[5.6]设置行间距</u></strong>
+        </p>
+        <p>语法：</p>
+        <p style="text-indent: 1em">line-height: 文字高度加上下间距</p>
+        <p>
+          还可以设置段落之间的行高<br />
+          即:p {<br />
+
+          line-height: 26px;<br />
+          }
+        </p>
+        <p><a href="#">回到顶部</a></p>
+      </div>
+      <!-- 6)css可书写的位置 -->
+      <div class="css_6 csstext">
+        <a name="css6"></a>
+        <div id="css_style_sheet">
+          <h3>(6)css可书写的位置</h3>
+          <ul>
+            <li>行内引入</li>
+            <li>内部嵌入</li>
+            <li>外部链接</li>
+          </ul>
+
+          <p>
+            <strong><u>[6.1]行内引入</u></strong>
+          </p>
+          <textarea cols="35" rows="3" readonly="readonly">
+      <p style="color:red">测试</p>
+  </textarea
+          >
+
+          <p>
+            <strong><u>[6.2]内部嵌入</u></strong>
+          </p>
+          <textarea cols="45" rows="5" readonly="readonly">
+<style>
+p {
+    ...
+}
+</style>
+  </textarea
+          >
+
+          <p>
+            <strong><u>[6.3]外部链接</u></strong>
+          </p>
+          <textarea name="" id="" cols="40" rows="6" readonly="readonly">
+    <p>
+        <link rel="stylesheet(告诉网页这是个css文件链接)" href="css文件地址" />
+      </p>
+  </textarea
+          >
+          <p>最好用外部的方式更改样式，实现样式与结构分离。</p>
+        </div>
+      </div>
+      <!-- 7)背景 -->
+      <div class="css_7 csstext">
+        <a name="css7"></a>
+        <div id="background_set_up">
+          <h3>(7)背景</h3>
+          <p><strong><u>[7.1]背景内容导航</u></strong></p>
+          
+          <p>
+            <!-- 总结 -->
+            <!-- 表头 -->
+            <table border="1">
+              <thead>
+                <tr>
+                 <td>属性</td>
+                 <td>作用</td>
+                 <td>值</td>
+                </tr>
+              </thead>
+      <tbody>
+      <tr>
+        <td>background-color</td>
+      <td>背景颜色</td>
+      <td>16进制颜色/预定义的颜色值/RGB代码</td>
+      </tr>
+      
+      <tr>
+      <td>background-image</td>
+      <td>背景图片</td>
+      <td>url(图片路径)</td>
+      </tr>
+      
+      <tr>
+      <td>background-repeat</td>
+      <td>是否平铺重复</td>
+      <td>repeat/no-repeat-x/repeat-y</td>
+      </tr>
+      
+      <tr>
+      <td class="Key_label">background-position</td>
+      <td>背景位置</td>
+      <td >length/position 分别是x和y的坐标</td>
+      </tr>
+      <tr>
+      <td>background-attachment</td>
+      <td>背景附着方式</td>
+      <td>scroll(背景随着滚动条滚动)/fixed(背景固定不动)</td>
+      </tr>
+      <tr>
+      <td>背景简写</td>
+      <td>书写更简单</td>
+      <td>背景颜色 背景图片地址 背景平铺 背景滚动 背景位置</td>
+      </tr>
+      <tr>
+      <td>背景颜色半透明</td>
+      <td>半透明</td>
+      <td>background:rgba(0,0,0,0.3); 必须有四个数字</td>
+      </tr>
+      </tbody>
+            </table>
+          </p>
+      
+      <span>
+      <!-- 背景颜色 -->
+      <p><strong><u>[7.2]设置背景颜色</u></strong></p>
+      <p>用途：用来设置背景的颜色，可以设置上到整个页面背景，下到一行文本的背景。</p>
+      <p>
+      语法：
+      </p>
+      <textarea name="" id="" cols="60" rows="2" readonly="readonly">
+      background-color: transparent | color
+      </textarea>
+      <p>属性值：</p>
+      <ol>
+      <li>transparent 默认设置，透明的颜色</li>
+      <li>颜色的英文|16进制颜色|rgb值</li>
+      </ol>
+      </span>
+          <div class="background_img">
+            <!-- 背景图片 -->
+      <p><strong><u>[7.3]设置背景图片</u></strong></p>
+      <p>
+      语法：
+      </p>
+      <textarea name="" id="" cols="60" rows="2" readonly="readonly">
+      background-image: url(图片地址);
+      </textarea>
+      <p>注意:1.必须有url属性 2.可以用于一些小装饰，logo，大背景等地方。</p>
+      </div>
+      
+      <!-- 平铺 -->
+      <p><strong><u>[7.4]设置背景的平铺方式</u></strong></p>
+      <p class="brief_introduction">简介：如果盒子比例过大，图片比例小，会默认重复显示x和y轴，</p>
+      <p>我们可以用平铺属性设置平铺方式或者不平铺。</p>
+      <p>属性值：</p>
+      <ul>
+      <li>repeat 默认值，垂直水平均重复</li>
+      <li>repeat-x 只有水平位置会重复背景图像</li>
+      <li>repeat-y 只有垂直位置会重复背景图像</li>
+      <li>no-repeat  background-image 不会重复</li>
+      </ul>
+      
+      <!-- 背景图片位置 -->
+      <p><strong><u>[7.5]设置背景的位置</u></strong></p>
+      <p>简介：调整背景的位置。</p>
+      <p>语法：</p>
+      <textarea name="" id="" cols="60" rows="2" readonly="readonly">
+      background-postion: x | y ;
+      </textarea>
+      
+      <p>值：</p>
+      <ul>
+      <li>水平方向(x) :center top bottom</li>
+      <li>垂直方向(y) :center left right</li>
+      </ul>
+      <p>注意：如果只设置一个值，那么另一个值默认center。</p>
+      
+      <p>[7.5.1]设置精确的图片位置</p>
+      <p>可以设置成像素值，原点是左上角开始可以设置图片和盒子边界的距离，<br>
+      也可以和center等值混合使用。</p>
+      
+      
+      
+      <!-- 背景附着方式 -->
+      <p><strong><u>[7.6]设置背景附着</u></strong></p>
+      <p>值：</p>
+      <ul>
+      <li>scroll(背景随着滚动条滚动)</li>
+      <li>fixed(背景固定不动)</li>
+      </ul>
+      <!-- 背景半透明 -->
+      <p><strong><u>[7.7]设置背景半透明</u></strong></p>
+      <p>语法：</p>
+      <textarea name="" id="" cols="60" rows="2" readonly="readonly">
+      background: rgba(0,0,0,0.3);
+      </textarea>
+      
+      <p>语义化解析：</p>
+      <ul>
+      <li>rgb 为颜色的rgb值</li>
+      <li>a 为透明的程度 范围：0~1 0为全透明 1为100%</li>
+      </ul>
+      <p>注意：透明度只能更改背景颜色的透明度，不会更改盒子中的内容。</p>
+      
+        </div>
+      </div>
+      <!-- 8)页面布局 -->
+      <div class="css_8 csstext">
+        <a name="css8"></a>
+        <div id="box">
+
+          <h3>(8)页面布局</h3>
+          <p>导读：页面布局三大核心，盒子模型，浮动，定位。每个页面是由很多个盒子组成的，盒子的位置可以由浮动进行粗略定位，用定位进行精确设置方位。</p>
+          <p>网页布局的过程：</p>
+          <ol>
+          <li>先准备好相关的网页元素，网页元素基本都是盒子box。</li>
+          <li>利用css设置好盒子的样式。然后摆放到相应的位置。</li>
+          <li>往盒子里装内容。</li>
+          </ol>
+          
+          <!-- 盒子模型 -->
+          <a name="css8.1"></a>
+          <div id="Box_Model">
+          <h4>[一]盒子模型</h4>
+          <p>组成：</p>
+          <ul>
+          <li>1.边框</li>
+          <li>2.外边距</li>
+          <li>3.内边距</li>
+          <li>4.内容</li>
+          </ul>
+          <!-- 边框 -->
+          <p><strong><u>[8.1.1]盒子边框(border)</u></strong></p>
+          <div class="border_text_1">
+          <p>边框属性：</p>
+          <ul>
+            <li>border-width  定义边框的粗细，单位px。</li>
+            <li>border-style  样式。</li>
+            <li>border-color  颜色。</li>
+          </ul>
+          </div>
+          <div>
+          <p>(A)粗细</p>
+          <p>单位用px，值越大越粗。</p>
+          
+          <p>语法：</p>
+          <textarea name="" id="" cols="60" rows="2" readonly="readonly">
+          border-width: 5px;
+          </textarea>
+          
+          </div>
+          
+          
+          <div>
+          <p>(B)边框样式</p>
+          <p>属性值：</p>
+          
+          <div>
+          <img src="img/border_styles.jpg" alt="边框样式">
+          </div>
+          
+          <p class="recount">我们只需要记住 solid(实线边框),dotted(点线边框),dashed(虚线边框) 这三个属性即可，其他的不常用。</p>
+          <p>语法：</p>
+          <textarea name="" id="" cols="60" rows="2" readonly="readonly">
+          border-style: solid|dotted|dashed|...;
+          </textarea>
+          </div>
+          
+          <div>
+          
+          <p>(c)边框的颜色</p>
+          <p>颜色不用多说。</p>
+          <p>语法：</p>
+          <textarea name="" id="" cols="60" rows="2" readonly="readonly">
+            border-color: rgb|color name|#00000;
+          </textarea>
+          </div>
+          <!-- 属性简写 -->
+          <div>
+          <p>border属性的简写</p>
+          <textarea name="" id="" cols="60" rows="3" readonly="readonly">
+          border: 1px solid blue;
+          一般情况下不要简写属性；
+          顺序：width > style > color 
+          </textarea>
+          <p>如何单独设置一条边框的样式颜色等？</p>
+          <p>边框有四个方向：left right bottom top</p>
+          <p>1)border-left-color: 2)border-right-color: 3)border-top-color: 等方式单独设置。</p>
+
+<!-- 内外边距 -->
+          <p><strong><u>[8.1.1]内外边距(重要)</u></strong></p>
+          <img src=" ./img/内外边距.png" alt="盒子的内外边距">
+          <!-- 内边距 -->
+          <a href="" name="box-padding"></a>
+<p>[A]内边距(padding)</p>
+<!-- 外边距 -->
+<a href="" name="box-margin"></a>
+<p>[B]外边距(margin)</p>
+<p><span class="tored">margin</span>属性用于设置外边距，设置盒子与盒子之间的距离</p>
+          </div>
+          
+          
+          <!-- 边框 -->
+          </div>
+          <!-- 主体内容 -->
+          </div>
+         
+      </div>
+<!-- 8.1.2)圆角边框 -->
+<div class="css9 csstext">
+  <!-- 锚点 -->
+  <a name="css8.2"></a>
+  <h3>[8.2]圆角的边框(重要)</h3>
+  <a name="css8.2.1"></a>
+  <strong><u>[8.2.1]基本的使用方法</u></strong>
+  <p>简介：</p>
+  <p>在css3中，新增了<span class="tored">圆角边框</span>样式，这样我们的盒子就可以变圆角了，甚至是圆形。</p>
+  <p>语法：</p>
+  <textarea cols="60" rows="2" readonly="readonly">
+    border-radius:length;
+  </textarea>
+  <p></p>
+  <span class="tored">radius半径(圆的半径)原理</span>:(椭)圆与边框交际形成圆角效果，半径越大，圆弧就越圆。
+  <!-- 打开实例 -->
+  <p>实例：</p>
+  <p><a href="./textes/csstext1圆角.html" target="_blank">圆角边框实例</a></p>
+  <!-- <br> -->
+  <a name="css9.2"></a>
+  <strong><u>[8.2.2]常用的几种使用方法</u></strong>
+<p>(1)创建一个圆型</p>
+<p>只要把半径设为盒子(必须是正方形盒子),将半径值设为高或宽的一半，这个盒子就会变成圆形</p>
+<p><span class="tored">也可以设成百分比，直接设为 50% 效果相同，建议使用这个方法</span></p>
+<div style="height:50px ;width:50px; border:4px solid pink; border-radius:50px"></div>
+<p>源码：</p>
+<textarea cols="100" rows="2" readonly="readonly">
+  <div style="height:50px ;width:50px; border:4px solid pink; border-radius:50px"></div>
+</textarea>
+<span><p>(2)创建圆角矩形</p></span>
+<span><div style="height:30px;width:60px;background-color:pink; border-radius:15px;">圆角矩形</div></span>
+<p>方法：</p>
+<ol>
+  <li>生成一个长方形盒子</li>
+  <li>将半径值设为高的一半(不可用百分比)</li>
+</ol>
+<p>(3)单独设置一个角的半径值</p>
+<p>A.复合写法</p>
+<ul>
+  <li>设四个值： border-radius:10px 20px 5px 6px; 顺序分别是左上 右上 右下 左下</li>
+  <li>设两个值： 1.左上和右下 2.右上和左下</li>
+</ul>
+<p>B.更精细的设置</p>
+<ul>
+  <li> border-top-left-radius: ; 左上角</li>
+  <li> border-top-right-radius: ; 右上角</li>
+  <li> border-bottom-left-radius: 60px; 左下角</li>
+  <li> border-bottom-right-radius: ; 右下角</li>
+</ul>
+<p>可以单独设置某个角的圆弧</p>
+
+</div>
+<!-- 8.1.3)盒子阴影&文字阴影 -->
+<div class="css10 csstext">
+  <a name="css10"></a>
+  <h3>(8.3)阴影</h3>
+  <!-- 简介 -->
+  <p>导读：</p>
+  <p>在css3中，新增了盒子的圆角属性，与盒子的阴影, 可以多样化设计盒子的样式。这一节我们讲阴影的设计。</p>
+  <p>    <strong><u>[8.3.A]盒子阴影</u></strong>
+  </p>
+  <img src="./img/盒子阴影.png" alt="盒子阴影" height="400px">
+  <p>浏览：</p>
+  <textarea name="" id="" cols="60" rows="3" readonly="readonly">
+    box-shadow: 10px 10px 10px 10px pink inset(可加可不加)
+  </textarea>
+  
+  <p>具体用法可以自行在浏览器里调试</p>
+  <p>这里放一个类似小米官网方块的预设：</p>
+  <textarea name="" id="" cols="60" rows="2" readonly="readonly">
+    box-shadow: -5px 5px 12px 0px gray;
+  </textarea>
+  <p>    <strong><u>[8.3.B] 文字阴影</u></strong>
+    <p>导读：可以为文字添加阴影，很少用了解即可</p>
+    <p>和上方使用方法一致</p>
+    <table border="1">
+      <tr>
+        <td>h-shadow</td>
+        <td>必须，水平阴影位置，允许负值</td>
+      </tr>
+      <tr>
+        <td>v-shadow</td>
+        <td>必须，垂直阴影位置，允许负值</td>
+      </tr>
+      <tr>
+        <td>blur</td>
+        <td>可选，模糊距离</td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td>可选模糊的颜色</td>
+      </tr>
+      
+    </table>
+
+</div>
+
+<!-- 9)浮动 -->
+<div class="css-float csstext">
+  <a name="css-float"></a>
+  <h3>(9)浮动(float)</h3>
+  <!-- 知识点导航 -->
+  <p>导航：</p>
+  <ul>
+    <li><a href="#float-9.1">9.1 为什么需要浮动?</a></li>
+    <li><a href="#float-9.2">9.2 什么是浮动?</a></li>
+    <li><a href="#float-9.3">9.3 浮动的特性1-脱标(重要)</a></li>
+    <li><a href="#float-9.4">9.3 浮动的特性2-浮动元素一行显示</a></li>
+    <li><a href="#float-9.5">9.5 浮动的特性3-浮动元素具有行内块元素的性质</a></li>
+    <li><a href="#float-9.6">9.6 浮动特性4-浮动元素经常和标准流父级搭配使用</a></li>
+    <li><a href="#float-9.7">9.7 浮动布局的两个注意点</a></li>
+    <li><a href="#float-9.8">9.8 清除浮动</a></li>
+  </ul>
+  <!-- 9.1)为什么需要浮动？ -->
+  <div>
+    <a name="float-9.1"></a>
+    <!-- <p>
+      <strong><u>[9.1]为什么需要浮动</u></strong>
+    </p> -->
+    <p class="subtitle">
+      [9.1]为什么需要浮动
+    </p>
+    <p>有很多布局效果，标准流无法完成，利用浮动就可以完成布局，浮动可以改变元素标签排列方式。</p>
+    <p>浮动最典型的应用：可以让多个块级元素一行内排列显示。</p>
+    <p><a href="./textes/float-9.1.html" target="_blank">实例应用</a></p>
+    
+    <p>网页布局第一准则：<span class="tored">多个块级元素纵向排列找标准流，多个块级元素横向排列找浮动</span></p>
+  </div>
+  <!-- 9.2)什么是浮动 -->
+<div>
+  <a name="float-9.2"></a>
+<p class="subtitle">[9.2]什么是浮动</p>
+<p><span class="tored">float</span>属性用于创建浮动框，将其移动到一遍，知道左边或右边缘触及包含块或另一个浮动框的边缘。</p>
+<p>语法：</p>
+<textarea cols="40" rows="2" readonly="readonly">
+ float: none|left|right ;
+</textarea
+    >
+<table border="1 " width="500px" style=" text-align:center">
+  <tr>
+    <td>属性值</td>
+    <td>描述</td>
+  </tr>
+  <tr>
+    <td>none</td>
+    <td>元素不浮动(默认值)</td>
+  </tr>
+  <tr>
+    <td>left</td>
+    <td>元素向右浮动</td>
+  </tr>
+  <tr>
+    <td>right</td>
+    <td>元素向右浮动</td>
+  </tr>
+</table>
+<a href="./textes/float9.2.html" target="_blank">实例应用</a>
+</div>
+<!-- 9.3)浮动的特性1-脱标 -->
+<div>
+<a name="float-9.3"></a>
+<p class="subtitle">
+  [9.3]浮动的特性1-脱标
+</p>
+<p>涉及浮动最重要的特性:</p>
+<ol type="i">
+  <li>脱离标准普通流的控制(浮)移动到指定的位置(动),(俗称<span class="tored">脱标</span>)</li>
+  <li>浮动的盒子<span class="tored">不再保留原先的位置</span></li>
+</ol>
+
+
+<a href="./textes/08-浮动特性-脱标(重要).html" target="_blank">实例应用</a>
+</div>
+<!-- 9.4)浮动的特性2-浮动元素一行显示 -->
+<div>
+<a name="float-9.4"></a>
+<!-- <a href="subtitle"></a> -->
+<p class="subtitle">[9.4]浮动的特性2-浮动元素一行显示</p>
+<img src="./img/浮动9.4.png" alt=  "浮动9.4">
+</div>
+
+<!-- 9.5)浮动特性3-浮动元素具有行内块元素的性质 -->
+<div>
+  <a name="float-9.5"></a>
+  <p class="subtitle">[9.5]浮动特性3-浮动元素具有行内块元素的性质</p>
+<table>
+  
+  <tr><p>3.浮动元素具有行内块元素的性质</p></tr>
+  <tr>
+<ul>
+<li>如果块级盒子没有设置宽度，默认宽度与父级盒子一致，但是添加浮动后，他的大小根据内容来决定</li>
+<li>浮动的盒子中间没有缝隙，是紧挨着一起的</li>
+<li>行内元素同理</li>
+</ul>
+  </tr>
+  <tr><a href="./textes/10-浮动特性-浮动元素具有行内块元素特点.html" target="_blank">实例应用</a></tr>
+</table>
+</div>
+<!-- 9.6)浮动特性4-浮动元素经常和标准流父级搭配使用 -->
+<div>
+<!-- 锚点 -->
+  <a name="float-9.6"></a>
+  <p class="subtitle">[9.6]浮动特性4-浮动元素经常和标准流父级搭配使用</p>
+  <img src="./img/浮动特性4.png" alt="第四个浮动特性" width="80%">
+  <p><a href="./textes/11-浮动元素搭配标准流父盒子.html" target="_top">实例应用</a></p>
+
+</div>
+<!-- 9.7)浮动布局的两个注意点 -->
+ <div>
+   <a name="float-9.7"></a>
+<p class="subtitle">[9.7]浮动布局的两个注意点</p>
+<h4>1.浮动和标准流的父盒子搭配</h4>
+<p class="tored">先用标准流的父元素排列上下位置，之后内部子元素采取浮动排列到左右位置</p>
+<p></p>
+<h4>2.一个元素浮动了，理论上其余的兄弟元素也跟着浮动</h4>
+<p>一个盒子里面有多个盒子，如果其中一个盒子浮动了，那么其他兄弟盒子也应该设置浮动，以防止引起问题</p>
+<p class="tored">浮动的盒子只会影响浮动盒子后面的标准流不会影响前面的标准流</p>
+</div>
+<!-- 9.8)清除浮动 -->
+<div>
+  <a name="float-9.8"></a>
+  <p class="subtitle">[9.8]清除浮动</p>
+  <!-- 总导航 -->
+  <p>为什么要清除浮动</p>
+  <ol type="1">
+    <li>父级没高度</li>
+    <li>子盒子浮动了</li>
+    <li>影响下面布局，我们就应该清除浮动</li>
+  </ol>
+ <table border="1px"  width="500px" style=" text-align:center ">
+   <!-- 1 -->
+   <thead>
+    <tr>
+      <td>清除浮动的方式</td>
+      <td>优点</td>
+      <td>缺点</td>
+     </tr>
+   </thead>
+   
+   <!-- 2 -->
+   <tr>
+    <td><a href="#float-clear-9.8.2">额外标签法</a></td>
+    <td>通俗易懂，书写方便</td>
+    <td>添加很多无意义标签，结构化较差</td>
+   </tr>
+   <!-- 3 -->
+   <tr>
+    <td><a href="#float-clear-9.8.3">父级overflow:hidden</a></td>
+    <td>书写简单</td>
+    <td>溢出隐藏</td>
+   </tr>
+   <!-- 4 -->
+   <tr>
+    <td><a href="#float-clear-9.8.4">父级after伪元素</a></td>
+    <td>结构语义化正确</td>
+    <td>由于IE6-7不支持 :after,兼容性问题</td>
+   </tr>
+   <!-- 5 -->
+   <tr>
+    <td><a href="#float-clear-9.8.5">父级双伪元素</a></td>
+    <td>结构语义化正确</td>
+    <td>由于IE6-7不支持 :after,兼容性问题</td>
+   </tr>
+  
+ </table>
+   <!-- 9.8.1 -->
+  <div>
+   
+    <p class="subtitle-a">[9.8.1]为什么要清除浮动</p>
+    <p>由于很多时候父盒子不好设置高度，需要让父盒子自适应，有多少内容就适应多少高度，
+    </p>
+    <p class="tored">如果设置为"auto"(自动适应),那么父盒子高(宽)会为"0"，会塌陷，影响下面的标准流盒子</p>
+
+    <a href="./textes/16-为什么需要清除浮动 copy.html" target="_top">实例应用</a>
+    <p>清除浮动的本质</p>
+    <ul>
+      <li>清除浮动的本质是清除浮动元素造成的影响</li>
+      <li>如果父盒子本身有高度，则不需要清除浮动</li>
+      <li><p class="tored">清除浮动后，父级就会根据浮动的子盒子自动检测高度。父级有了高度，就不会影响下面的标准流了</p></li>
+    </ul>
+  </div>
+  <!-- 9.8.2 额外标签法 -->
+ <div>
+  <a name="float-clear-9.8.2"></a>
+<p class="subtitle-a">[9.8.2]额外标签法 (clear)</p>
+<p>需要在最后一个盒子添加一个额外的标签</p>
+<textarea cols="50" rows="13" readonly="readonly">
+ <style>
+   .clear{
+     clear:both;
+   }
+   /* 只需要在最后一个盒子加上clear类就可以清除浮动了，此方法不易维护结构性差  */
+ </style>
+ <div class="one">
+ </div>
+ <div class="tow clear">
+ </div>
+
+ </textarea>
+ </div>
+<!-- 9.8.3 父级overflow:hidden	 -->
+<div>
+  <a name="float-clear-9.8.3"></a>
+  <p class="subtitle-a">[9.8.3]父级overflow:hidden</p>
+  <p>只需要在父盒子的css属性中添加"overflow:hidden"属性就可以清除浮动</p>
+  <!-- --源码展示-- -->
+  <textarea cols="50" rows="13" readonly="readonly">
+    <style>
+      .main{
+        overflow:hidden;
+      }
+    </style>
+
+    <div class="main">
+      <div class="one">
+      </div>
+      <div class="tow">
+      </div>
+    </div>
+    
+   
+    </textarea>
+</div>
+<!-- 9.8.4  父级after伪元素	 -->
+<div>
+  <a name="float-clear-9.8.4"></a>
+  <p class="subtitle-a">[9.8.4]父级after伪元素</p>
+  <p><span class="tored">:after</span>属性同样是添加到父元素盒子即可</p>
+<p>直接复制 atyle 内的 css 代码即可，无需更改</p>
+<!-- --源码展示-- -->
+<textarea cols="50" rows="13" readonly="readonly">
+  <style>
+    .clearfix:after{
+      content:"";
+      /* 内容设置为空 */
+      display:block;
+      /* 更改为块级元素 */
+      height:0;
+      clear:both;
+      /* 设置清除 */
+      visibility:hidden;
+      /* 高级隐藏盒子 */
+    }
+    .clearfix{
+     /* IE6~7专有 */
+     *zoom:1;
+
+    }
+   
+  </style>
+  <!-- 然后给父元素添加类名即可，类名可以是任何名字，不过一般会使用clearfix. -->
+  <div class="main  clearfix">
+    <div class="one">
+    </div>
+
+    <div class="tow">
+    </div>
+  </div>
+  </textarea>
+<p>此方法是标签法的升级版，更加结构化，还可以全局设置，但是ie的兼容是个问题</p>
+<p>原理就是给盒子添加一个完全透明且不占地方的盒子，以此来清除浮动的塌陷</p>
+</div>
+<!-- 9.8.5 父级双伪元素 -->
+<div>
+  <a name="float-clear-9.8.5"></a>
+  <p class="subtitle-a">[9.8.5]父级双伪元素</p>
+  <p>使用方法：</p>
+  <p>和上一个一样，直接复制到css属性中即可。</p>
+  <!-- --源码展示-- -->
+<textarea cols="50" rows="13" readonly="readonly">
+  <style>
+    .clearfix:bafore,.clearfix:after{
+      content:"";
+      display:table;
+    }
+    .clearfix:after{
+     clear:both;
+    }
+    .clearfix{
+     /* IE6~7专有 */
+     *zoom:1;
+
+    }
+   
+  </style>
+  <!-- 然后给父元素添加类名即可，类名可以是任何名字，不过一般会使用clearfix. -->
+  <div class="main  clearfix">
+    <div class="one">
+    </div>
+
+    <div class="tow">
+    </div>
+  </div>
+  </textarea>
+
+  <p>优点，使用方便</p>
+  <p>缺点，比较照顾低版本浏览器</p>
+  <p>比较典型的例子：小米`腾讯等</p>
+</div>
+
+
+
+
+</div>
+
+
+      <!-- 底部 -->
+    </div>
+    <!-- 10)定位 -->
+    <div class="css-position csstext">
+      <!-- 锚点 -->
+      <a name="css-position"></a>
+      
+      <h3>(10)定位(position)</h3>
+      <ul>
+        <li><a href="#css-position-10.1">10.1 导读</a></li>
+        <li><a href="#css-position-10.2">10.2 定位的组成</a></li>
+        <li><a href="#css-position-10.3">10.3 静态定位</a></li>
+        <li><a href="#css-position-10.4">10.4 相对定位(relative)</a></li>
+        <li><a href="#css-position-10.5">10.5 绝对定位(absolute)</a></li>
+        <li><a href="#css-position-10.6">10.6 固定定位(fixed)</a></li>
+      </ul>
+      <!-- 导读 -->
+<div>
+  <a name="css-position-10.1"></a>
+  <p class="subtitle">[10.1]定位导读</p>
+  <p>/A/目标</p>
+  <ul>
+    <li>能够说出为什么需要定位</li>
+    <li>定位的4个分类</li>
+    <li>四种定位的特点</li>
+    <li>为什么常用子绝父相布局</li>
+    <li>能够写出淘宝轮播图布局</li>
+    <li>能够说出显示隐藏的两种方式以及区别</li>
+  </ul>
+  <p>/B/为什么需要定位</p>
+  <p class="tored">1.某个元素可以自由的在一个盒子内移动位置，并且压住其他盒子</p>
+  <p>例如淘宝网热卖标签，学成在线网的热门标签(他们都压住了底部的盒子，并且可以随意移动位置不会占用标准流的位置)</p>
+<p class="tored">2.当我们滚动窗口时，盒子是固定在屏幕的某个位置的，不会随着滚动而移动。</p>
+<p>例如小米官网的右侧服务栏，王者荣耀右侧二维码，和各种网站的回到顶部按钮</p>
+<p class="tored">3.浮动可以让多个盒子无缝隙的挨在一起，定位可以让一个盒子固定在一个位置，并且压在另一个盒子的上面
+
+</p>
+
+
+
+</div>
+
+<!-- 定位组成 -->
+<div>
+  <a name="css-position-10.2"></a>
+  <p class="subtitle">[10.2]定位的组成</p>
+  <p><span class="tored">定位</span>:将盒子定在某个位置，<span class="tored">所以定位也是在摆放盒子，按照定位的方式偏移盒子</span></p>
+<p>定位=定位模式+边偏移</p>
+<p><span class="tored">定位模式</span>用于指定一个元素在文档中的定位方式。<span class="tored">边偏移</span>决定了该元素最终的位置。</p>
+
+<!-- 定位方式 -->
+<p>1. 定位模式</p>
+<p>通过css<span class="tored">position</span>属性来设置，有四个值:</p>
+<table border="1 " width="500px" style=" text-align:center">
+  <tr>
+    <td>值</td>
+  <td>语义</td>
+</tr>
+<tr>
+  <td>static</td>
+<td>静态定位</td>
+</tr>
+<td>relative</td>
+<td>相对定位</td>
+</tr>
+</tr>
+<td>absolute</td>
+<td>绝对定位</td>
+</tr>
+</tr>
+<td>fixed</td>
+<td>固定定位</td>
+</tr>
+</table>
+<textarea name="" id="" cols="50" rows="2">
+  position: static|relative|absolute|fixed ;
+</textarea>
+<!-- 边偏移 -->
+<p>2. 边偏移</p>
+<p>边偏移就是定位的盒子移动到最终位置，有top bottom left right 四个属性</p>
+<ul>
+  <li>top - top: 80px - 顶部偏移量，定义元素相对于父元素上方线的距离</li>
+  <li>bottom - bottom: 80px - 底部偏移量，定义元素相对于父元素下方线的距离</li>
+  <li>left - left: 80px - 左侧偏移量，定义元素相对于父元素左边线的距离</li>
+  <li>right - right: 80px - 右侧偏移量，定义元素相对于父元素右边线的距离</li>
+</ul>
+<textarea name="" id="" cols="50" rows="13">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+.box{
+  position:fixed;
+  left:400px;
+  top:30px;
+}
+  </style>
+
+  <div class="box"></div>
+</textarea>
+</div>
+<!-- 相对定位 -->
+<div>
+  <!-- 静态定位 -->
+  <a name="css-position-10.3"></a>
+  <p class="subtitle">[10.3]静态定位 static(了解即可)</p>
+<p>静态定位是元素的默认定位方式，没有定位意思</p>
+<p>语法：</p> 
+<textarea cols="35" rows="2" readonly="readonly">
+选择器 {position:static};
+</textarea> 
+<p>静态定位按照标准流特性摆放位置，没有边偏移</p>
+<p>静态定位在布局中很少用到</p>
+
+<!-- 相对定位 -->
+<a name="css-position-10.4"></a>
+<p class="subtitle">[10.4]相对定位 relative (重要)</p>
+<p>相对定位元素的定位是相对其本身的坐标轴所偏移的定位。</p>
+<p>移动相对定位元素，但它原本所占的空间不会改变。</p>
+<p>人走了，魂还在 (原来的位置还占有，并不会被其他盒子所占有)
+   类似于灵魂出窍
+</p>
+<img src="./img/相对定位.png" alt="相对定位" heihgt="60%">
+<p><a href="https://www.runoob.com/css/css-positioning.html#position-relative" target="_blank">菜鸟教程</a></p>
+
+<p>通常搭配绝对定位使用(即父相子绝)</p>
+<p>注:可以是负数</p>
+<p>相对定位的特点(务必记住)</p>
+<ol>
+  <li>他是相对于自己原来的位置来移动的<span class="tored">移动位置的时候参照点是自己原来的位置</span></li>
+  <li>原来在标准流的位置继续占有，后面的盒子依然以标准流的方式对待他(<span class="tored">不脱标，继续保留原来的位置</span>)<br>因此，相定并没有脱标。它最典型的应用是给绝对定位当爹的。。。</li>
+</ol>
+</div>
+<!-- 绝对定位 -->
+<div>
+  <a name="css-position-10.5"></a>
+  <p class="subtitle">[10.5]绝对定位</p>
+  <p>绝对定位是根据他的祖先元素来移动位置的(拼爹)</p>
+  <!-- 语法 -->
+  <p>语法：</p>
+  <p>选择器{position:absolute}</p>
+  <!-- 情况1 -->
+<p class="subtitle-a">[A]没有父级或者父级没有定位的情况</p>
+<p>1.如果<span class="tored">没有祖先元素或者祖先元素没有定位</span>，则以浏览器为准定位(Docment).</p>
+<p>我找不到爹，只能跟着女娲走了</p>
+<!-- 实例 -->
+<a href="./textes/02-绝对定位-父级无定位.html" target="_blank">实例应用</a>
+<p class="subtitle-a">[B]父级盒子有定位的情况</p>
+<p>2.如果祖先元素有定位(相对，绝对，固定)，则以最近一级的有定位的祖先元素为准进行定位</p>
+<p>从离自己最近的元素开始找，谁有定位谁是我爹，我就跟谁走</p>
+<a href="./textes/03-绝对定位 -父级有定位.html" target="_blank">实例应用</a>
+<!-- 第三 -->
+<p>3.绝对定位<span class="tored">移动后不会占有原有的位置。</span>(脱标)</p>
+<p>在它之下的盒子会占用空出来的位置，大儿子走了二儿子占。</p>
+<!-- 子绝父相 -->
+<p class="subtitle-a">[B]定位的应用之一--子绝父相</p>
+<p class="tobig">问题</p>
+<!-- 两个问题 -->
+<ol>
+  <li>相对定位和绝对定位到底能用在哪呢?</li>
+  <li>为什么说相对定位给绝对定位当爹?</li>
+</ol>
+<p>我们观察淘宝官网轮播图可以知道，左右两边有两个箭头，如果使用浮动去制作会很麻烦</p>
+<p>这时候，使用子绝父相可以使用少量代码完成效果</p>
+<p>效果思路</p>
+<p>1.子绝父相即父盒子相对定位，子盒子使用绝对定位，因为绝对定位脱标，不会占用原空间</p>
+<p>2.同理，下方小圆点也可以用绝对定位</p>
+<a href="./textes/轮播图左右指针制作.html" target="_blank">应用实例</a>
+</div>
+<!-- 固定定位 -->
+<div>
+  <a name="css-position-10.6"></a>
+  <p class="subtitle">[10.6]固定定位(fixed)</p>
+  <p><span class="tored">固定定位</span>是元素<span class="tored">规定于浏览器可视区的重要位置</span>,主要使用场景:可以在浏览器页面滚动时元素的位置不会改变.</p>
+<p>语法</p>
+<textarea cols="25" rows="2" readonly="readonly">
+ 选择器{position:fixed}
+</textarea
+    > 
+<p>固定定位的特点:</p>
+<ol>
+  <li>以浏览器的可视窗口为参照点移动元素。<br>
+  跟父元素没有关系。</li>
+  <li>不随滚动条滚动</li>
+  <li>不占有原来的位置，和绝对定位相同</li>
+  <li>固定定位也是脱标的，其实规定定位可以看做一种特殊的绝对定位</li>
+</ol>
+<p>作业：网页两侧固定的广告</p>
+<p>右侧固定二维码</p>
+<a href="./textes/王者荣耀背景_背景方位的使用.html" target="_blank">实例应用</a>
+<p class="tored">固定定位小技巧：回到顶部按钮</p>
+<p>很多网站的返回顶部按钮都是粘着版心的，那么怎么去做这种效果呢</p>
+<a href="../css笔记网页版/textes/王者荣耀背景_背景方位的使用.html" target="_blank">实例应用</a>
+
+</div>
+<!-- 粘性定位(了解) -->
+<div></div>
+<!-- 定位总结与技巧 -->
+
+<!-- 最底部 -->
+<a href="#">回到顶部</a>
+
+    </div>
+<!-- 11)显示隐藏元素 -->
+<div class="css-show csstext">
+  <a name="css-show"></a>
+<h3>(11)显示和隐藏元素</h3>
+<!-- 导读 -->
+<div>
+  <p class="subtitle">[1]导读</p>
+  <p>类似网站的广告，当我们点击关闭就不见了，但是我们重新刷新页面，会重新出现</p>
+  <p>本质:<span class="tored">让一个元素在页面中隐藏或者显示出来</span></p>
+  <ol type="1">
+    <li><a href="#css-show-display">display显示隐藏元素</a></li>
+    <li><a href="#css-show-visibility">visibility显示隐藏元素</a></li>
+    <li><a href="#css-show-overflow">overflow溢出显示隐藏元素</a></li>
+  </ol>
+</div>
+<!-- 2)display显示隐藏元素 -->
+<div >
+  <a name="css-show-display"></a>
+<p class="subtitle">[2]display显示隐藏元素</p>
+<p>display属性用于设置一个元素应如何显示</p>
+<ul>
+  <li>display:none ;隐藏对象。</li>
+  <li>display:block ;除了转换为块级元素外，同时还有显示元素的意思。</li>
+</ul>
+<p class="tored">display隐藏元素后，不再占有原来的位置。</p>
+<p>后面应用及其广泛，搭配js可以做很多的网页特效</p>
+<a href="../css笔记网页版/textes/14-显示隐藏之display.html" target="_blank">--实例--</a>
+
+</div>
+<!-- 3)visibility显示隐藏元素 -->
+<div>
+  <a name="css-show-visibility"></a>
+<p class="subtitle">[3]visibility显示隐藏元素</p>
+<p><span class="tored">visibility属性用于指定一个元素可见还是隐藏</span></p>
+<ul>
+  <li>visibility: visible; 元素可见</li>
+  <li>visibility: hidden; 元素隐藏</li>
+</ul>
+<p class="tored">visibility隐藏元素后，继续占有原来的位置。</p>
+<p>如果隐藏元素想要原来的位置，就用visibility: hidden;</p>
+<p>如果隐藏元素不想要原来的位置，就用display:none;(用处更多 重点)</p>
+<a href="../css笔记网页版/textes/15-显示隐藏之visibility.html" target="_blank">--实例--</a>
+ 
+
+
+</div>
+<!-- 4)overflow溢出显示隐藏元素 -->
+<div>
+  <a name="css-show-overflow"></a>
+  <p class="subtitle">[4]overflow溢出显示隐藏元素</p>
+  <p>overflow属性指定了如果内容溢出一个元素的框(超过其指定高度及宽度)时，会发生什么。</p>
+<ul>
+  <li>overflow:visible ;   不剪切内容也不添加滚动条</li>
+  <li>overflow:hidden ;    不显示超过对象尺寸的内容，超出的部分隐藏掉</li>
+  <li>overflow:scroll ;    不管超出内容与否，总是显示滚动条</li>
+  <li>overflow:suto ;      超出自动显示滚动条，不超出不显示滚动条</li>
+</ul>
+<p>一般情况下，我们都不想让溢出的内容显示出来，因为溢出的部分会影响布局。</p>
+<p>但是如果有定位的盒子，谨慎使用overflow:hidden ; 因为它会隐藏多余的部分。</p>
+
+
+
+  <a href="./textes/16-显示隐藏之overflow溢出隐藏.html" target="_blank">--实例--</a>
+</div>
+
+</div>
+<!-- 各小节练习 -->
+    <div class="practice-css  csstext">
+      <h3>(12)css各小节练习</h3>
+      <a name="practice-css"></a>
+      <div>
+        <p class="subtitle">[1]纵向二级导航栏</p>
+        <a href="./practice/纵向二级导航栏.html" target="_blank">practice-1</a>
+
+      </div>
+      <div>
+
+        <p class="subtitle">[2]页面布局总体小练习</p
+          >
+          <a href="./practice/学成在线案例/study/index.html" target="_blank">practice-2</a>
+      </div>
+
+    </div>
+
+<div class="csstext">
+  <a name="chapter-2"></a>
+  <h1>第二章 CSS高级技巧</h1>
+
+  <h3>[A]学习目标</h3>
+  <ul>
+<li>能够使用精灵图</li>
+<li>能够使用字体图标</li>
+<li>能够写出css三角</li>
+<li>能够写出常见的CSS用户界面样式</li>
+<li>能够写出常见的布局技巧</li>
+  </ul>
+
+<h3>[B]目录</h3>
+<ul>
+  <li><a href="">精灵图</a></li>
+  <li><a href="">字体图标</a></li>
+  <li><a href="">css三角</a></li>
+  <li><a href="">css用户界面样式</a></li>
+  <li><a href="">vertical-align属性的应用</a></li>
+  <li><a href="">溢出的文字省略号显示</a></li>
+  <li><a href="">常见的布局技巧</a></li>
+</ul>
+</div>
+<!-- 第二章 CSS高级技巧 -->
+<div class="csstext">
+<!-- 1 精灵图 -->
+
+<!-- 2 字体图标 -->
+<div class="">
+  <a name="css-iconfont"></a>
+<h3>(2)字体图标</h3>
+<a href="https://www.bilibili.com/video/BV1i3411p7gM?spm_id_from=333.999.0.0" target="_blank">具体使用方法可参考此视频</a>
+
+<p class="subtitle">[1]字体图标的产生和优点</p>
+<p class="subtitle-a">产生</p>
+<p>字体图标使用场景：主要用于显示网页中通用，常用的一些小图标。</p>
+<p>精灵图缺点很明显。这时有一种技术可以很好的解决问题，就是<span class="tored">字体图标iconfont</span></p>
+<p>字体图标可以为前端工程师提供一种方便高效的图标使用方式，展示的是图标,<span class="tored">本质属于字体。</span></p>
+<p>所以我们可以用字体的样式来设置图标(例如 font-size `color等);</p>
+
+<p class="subtitle-a">优点</p>
+<ul>
+  <li>轻量级：一个字体图标要比一系列的图像要小。一旦字体加载了，图标马上渲染出来，减少了服务器请求。
+  </li>
+  <li>灵活性：本质是文字，可以随时变换颜色，产生阴影，透明效果，旋转等</li>
+  <li>兼容性：几乎所有的浏览器都支持，可放心使用</li>
+</ul>
+<p>注意：字体图标不能代替精灵技术，只是对工作中图标部分技术的提升和优化</p>
+<p class="aggravate">总结</p>
+<ol>
+  <li>如果遇到一些结构和样式简单的小图标(搜索放大镜，我的收藏)，就用字体图标。</li>
+  <li><img src="./img/字体图标1.png" alt=""></li>
+  <li>如果遇到一些样式复杂的小图片，就用精灵图 </li>
+  <li><img src="./img/字体图标2.png" alt=""></li>
+</ol>
+<p class="subtitle">[2]字体图标的下载</p>
+<a href="https://www.bilibili.com/video/BV14J4114768?p=256&spm_id_from=pageDriver" target="_blank">视频教程</a>
+<p calss="aggravate">推荐下载网站:</p>
+<table border="1" style="padding:-1px">
+  <tr>
+    <td>链接</td>
+    <td>备注</td>
+  </tr>
+  <tr>
+    <td>icomoon字库
+      <a href="http://icomoon.io" target="_blank">链接</a>
+    </td>
+    <td>国外服务器，打开网速慢</td>
+  </tr>
+  <tr>
+    <td>阿里巴巴矢量字体库
+      <a href="https://www.iconfont.cn/" target="_blank">链接</a>
+    </td>
+    <td>阿里巴巴的图标库，免费，淘宝用的就是此图标库,此图标不可商用。</td>
+  </tr>
+</table>
+
+<p class="subtitle">[3]字体图标的使用</p>
+<a href="https://www.bilibili.com/video/BV14J4114768?p=257" target="_blank">icomoon字库使用方法</a>
+<p></p>
+<a href="https://www.bilibili.com/video/BV1i3411p7gM?spm_id_from=333.1007.top_right_bar_window_history.content.click" target="_blank">阿里巴巴字库使用方法</a>
+<p>阿里巴巴图标库方法：</p>
+<p>如果之前添加的图标库不够用了，那么可以添加新的图标，然后替换原来的图标库。
+</p>
+<p class="span">icomoon字库方法：</p>
+<a href="https://www.bilibili.com/video/BV14J4114768?p=258" target="_blank">GO</a>
+
+</div>
+<!-- 3 css三角 -->
+<div>
+  <a name="css-triangle"></a>
+<h3>(3)css三角</h3>
+<p>网页中常见的三角形，使用css即可做出来，不用图片</p>
+<p>源码:</p>
+
+<textarea cols="60" rows="20" readonly="readonly">
+ <style>
+   .box{
+     /* 1.都设为零 */
+     /* 合理改变高和宽的数值可以改成梯形 */
+     height: 0;
+     width:0;
+     /* 2.兼容旧版浏览器 */
+     font-size:0;
+     line-height: 0;
+     /* 3.添加三角颜色 */
+     /* 50px 设置三角的大小 */
+     border:50px solid transparent;
+     /* 更改三角颜色 */
+     border-bottom-color:pink;/*bottom 生成为朝上的三角*/
+   }
+ </style>
+ <div class="box">
+
+ </div>
+</textarea>
+<img src="./img/css三角.png" alt="">
+
+<p class="subtitle">实例应用:</p>
+<p>京东的三角形样式</p>
+<img src="./img/css三角形的应用.png" alt="">
+<p>知识点:</p>
+<p>如需具体学习请右键查看源码</p>
+<ul>
+  <li>子绝父相</li>
+  <li>三角的应用</li>
+</ul>
+<a href="./textes/京东三角形.html" target="_blank">--实例--</a>
+</div>
+
+<!-- 4 基本用户界面 -->
+<div>
+  <a name="css-userlook"></a>
+  <h3>(4)基本用户界面</h3>
+  <p>导航:</p>
+<ul>
+  <li>
+    <a href="#userlook-cursor">鼠标样式</a>
+  </li>
+  <li>
+    <a href="#userlook-outline">取消表达轮廓和拖拽</a>
+  </li>
+</ul>
+<!-- 鼠标样式 -->
+<div>
+
+<a name="userlook-cursor"></a>
+<p class="subtitle">[1]鼠标样式</p>
+
+<textarea cols="60" rows="4" readonly="readonly">
+  li{
+    cursor: pointer
+  }
+ </textarea>
+<p>设置或检索在对象上移动鼠标指针采用何种系统预定义的光标形状。</p>
+<p>这里有五个常用样式的属性，写进css值里即可设置样式</p>
+<table border=1px style="width:400px">
+  <thead>
+<tr>
+  <td>属性值</td>
+  <td>描述</td>
+</tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>default</td>
+      <td>小白默认</td>
+    </tr>
+    <tr>
+      <td>pointer</td>
+      <td>小手</td>
+    </tr>
+    <tr>
+      <td>move</td>
+      <td>移动</td>
+    </tr>
+    <tr>
+      <td>text</td>
+      <td>文本</td>
+    </tr>
+    <tr>
+      <td>not-allowed</td>
+      <td>禁止</td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="./textes/鼠标样式.html" target="_blank">--实例--</a>
+</div>
+<!-- 取消表达轮廓和拖拽 -->
+<div>
+<a name="userlook-outline"></a>
+<p class="subtitle">[2]取消表单轮廓和拖拽</p>
+<p>我们先看两个案例</p>
+<p>1.取消表单轮廓</p>
+<input type="text" placeholder="表单1">
+<input type="text" placeholder="表单2"  style="outline: none;">
+<p>表单1点击后会有个轮廓，表单2点击后没有</p>
+
+<p>2.取消文本框拖拽</p>
+<textarea name="" id="" cols="20" rows="5" style="resize: both;"></textarea>
+<textarea name="" id="" cols="20" rows="5" style="resize: none;"></textarea>
+<p>左边那个可以拖拽，会影响整体布局 | 右边那个不能拖拽</p>
+
+<p class="subtitle-a">{A}取消表单轮廓</p>
+<textarea cols="30" rows="10" readonly="readonly">
+  <style>
+  input{
+    /* 添加这个样式，值设为0或者none */
+    outline:none;
+    }
+  </style>
+  <!-- 这是一个表单 -->
+  <input type="text">
+</textarea>
+<p>可以看看淘宝和京东的大搜索栏区域，input轮廓线都没有</p>
+<p>如果有轮廓的话会影响美观，建议使用 outline:none; 删除轮廓</p>
+
+<p class="subtitle-a">{B}取消文本框表单拖拽</p>
+<p>像某些网页中的评论输入区，用的就是文本框，为了不影响布局，都会删除拖拽。</p>
+<textarea cols="40" rows="10" readonly="readonly">
+  <style>
+  textarea{
+    /* 添加这个样式，值设为none */
+    resize: none;
+    }
+  </style>
+  <!-- 这是一个文本框 -->
+ <textarea cols="30" rows="10"></textarea>
+</textarea>
+<p class="tored">建议使用文本框时都取消拖拽，这会很影响网页整体布局！</p>
+<p> readonly="readonly" 使用文本框时建议加上这个属性，使这个文本框不可以随意删除和改变</p>
+<p>当然，文本框也有边框也可以通过 outline:none; 样式来删除轮廓，使整体更加美观</p>
+</div>
+<!-- vertical-align属性的应用 -->
+<div>
+<h3>(5)vertical-align属性的应用</h3>
+<a name="css-vertical--align"></a>
+<p class="subtitle">[1]基本使用方法</p>
+<p>css的<span class="tored">vertical-align</span>属性应用场景:经常用于设置图片或者表单(行内块元素)，和文字垂直对齐。</p>
+<p>效果如下：</p>
+<img src="./img/vertical-align属性1.png" alt="">
+<p class="tored">只针对于行内元素或者行内块元素有效</p>
+<textarea cols="60" rows="6" readonly="readonly">
+<style>
+  span{
+    vertical-align: baseline(默认) | top | middle | bottom;
+  }
+</style>
+ </textarea>
+
+ <table width="450px">
+   <thead>
+<tr>
+  <td>值</td>
+  <td>描述</td>
+</tr>
+   </thead>
+   <tbody>
+
+    <tr>
+      <td>baseline</td>
+      <td>默认值，元素放置在父元素的基线上</td>
+    </tr>
+    <tr>
+      <td>top</td>
+      <td>把元素的的顶端与行中最高元素的顶端对齐</td>
+    </tr>
+    <tr>
+      <td>middle</td>
+      <td>把此元素放置在父元素的中部</td>
+    </tr>
+    <tr>
+      <td>bottom</td>
+      <td>把元素的顶端与行中最低的元素的顶端对齐</td>
+    </tr>
+   </tbody>
+ </table>
+
+<p class="subtitle-a">字符的基线，底线。</p>
+<img src="./img/字符的底线中线等.png" alt="" style="width:800px;">
+<p></p>
+<a href="./textes/vertical-align属性的应用.html" target="_blank">--实例--</a>
+
+<p class="subtitle">[2]属性的应用(消除图片对齐缝隙问题)</p>
+<p>可以看到图片与边框是有缝隙的，因为浏览器默认对齐基线</p>
+<div style="border:1px solid red;">
+  <img src="./img/liudehua.jpeg" alt="" style="height:200px;">apr
+</div>
+<p>解决方法：</p>
+<p>1.给图片添加<span class="tored">vertical-align:bottom|middle|top;</span>等。提倡使用此方法。</p>
+<p>2.把图片转换为块级元素<span class="tored">display:block;</span>。</p>
+<p>缝隙就消失了：</p>
+<div style="border:1px solid red;">
+  <img src="./img/liudehua.jpeg" alt="" style="height:200px; vertical-align: bottom;">apr
+</div>
+<!-- 文字溢出显示 -->
+<div>
+<h3>(6)溢出的文字省略号显示</h3>
+<a name="css_Text overflow"></a>
+<p class="subtitle">导读</p>
+  <p>在各种网页中，比如淘宝京东，商品名字可能会超过商品展示盒子的长度限制，会自动用省略号补全(...),本章我们学习如何制作此效果。</p>
+<img src="./img/单行文字溢出显示1.png" alt="单行文本溢出" title="单行文本溢出">
+<img src="./img/多行文本溢出显示1.png" alt="多行文本溢出" title="多行文本溢出">
+<p class="subtitle">[1]单行文本溢出显示省略号--必须满足三个条件</p>
+<textarea cols="100" rows="8" readonly="readonly">
+  /*1.先强制一行内显示文本*/
+  /*默认 normal 自动换行*/
+  white-space: nowrap; 
+  /*2.超出部分隐藏*/
+  overflow: hidden;
+  /*3.文字用省略号代替超出部分*/
+  text-overflow: ellipsis;
+ </textarea>
+<p>
+  将源码复制到需要省略的地方，例如p标签。
+</p>
+<a href="./textes/单行文本溢出省略号.html" target="_blank">--实例--</a>
+
+<p class="subtitle">[2]多行文本溢出显示</p>
+<p class="subtitle-a">多行文本溢出显示省略号，有较大的兼容问题，适合于webKit浏览器和移动端(移动端大部分是webKit内核的)</p>
+<textarea cols="100" rows="10" readonly="readonly">
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*弹性伸缩盒子模型显示*/
+  display: -webkit-box;
+  /*限制在一个块元素显示的文本的行数*/
+  /*省略号生成在第2行*/
+  -webkit-line-clamp: 2;
+  /*设置或检索伸缩盒子对象的子元素的排列方式*/
+  -webkit-box-orient: vertical;
+ </textarea>
+ <p class="tored">[了解即可！]</p>
+<p class="tored">更推荐让后台人员来做这个效果，因为后台人员可以设置显示多少字，操作更简单。JavaScript也可以做出这个效果。</p>
+<a href="./textes/多行文本溢出省略号.html" target="_blank">--实例--</a>
+</div>
+<!-- (7)常见的几个布局技巧 -->
+<div>
+  <a name="css_layout"></a>
+  <h3>(7)常见的几个布局技巧</h3>
+  <ul>
+    <li><a href="#margin_negative" target="">Margin负值的巧妙应用(解决边框重合，可以使其更美观)</a></li>
+    <li><a href="#textAround" target="">文字围绕周围浮动元素巧妙运用(腾讯新闻右边新闻推荐的样式制作)</a></li>
+    <li><a href="#css_use_inlineblock" target="">行内块元素的巧妙运用(京东选择商品页面的样式制作)</a></li>
+    <li><a href="#css_triangle_use" target="">css三角的巧妙应用(京东商品价格的样式制作)</a></li>
+  </ul>
+  <!-- [1]Margin负值的巧妙应用 -->
+  <div>
+    <a name="margin_negative"></a>
+    <p class="subtitle">[1]Margin负值的巧妙应用</p>
+    <img src="./img/Margin负值的应用.jpg" alt="" style="height:400px;">
+    <p></p>
+    <a href="./textes/Margin负值的应用.html" target="_blank">--实例--</a>
+  </div>
+  <!-- 文字围绕周围浮动元素巧妙运用 -->
+  <div>
+    <a name="textAround"></a>
+    <p class="subtitle">[2]文字围绕周围浮动元素巧妙运用</p>
+    <img src="./img/文字围绕浮动元素.jpg" alt="文字围绕周围浮动元素巧妙运用" title="文字围绕周围浮动元素巧妙运用">
+    <p></p>
+    <a href="./textes/文字环绕盒子.html" target="_blank">--实例--</a>
+    <p>源码</p>
+    <textarea cols="100" rows="47" readonly="readonly">
+      <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字环绕图片显示</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: gray;
+      }
+      .box1 {
+        height: 80px;
+        width: 250px;
+        background-color: white;
+        padding: 5px;
+        margin: 0 auto;
+      }
+      .imges {
+        height: 80px;
+        width: 120px;
+        /* 给封面的盒子加上左浮动就可以实现文字围绕盒子显示 */
+        float: left;
+        margin-right:5px;
+      }
+      .imges img {
+        height: 80px;
+        width: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="imges">
+        <img src="../img/0.jpg" alt="" />
+      </div>
+      <p>互联网显示IP属地，“震”得了饭圈吗？</p>
+    </div>
+  </body>
+</html>
+    
+     </textarea>
+  </div>
+  <!-- 行内块元素的巧妙运用 -->
+  <div>
+    <a name="css_use_inlineblock"></a>
+<p class="subtitle">[3]行内块元素的巧妙运用</p>
+<p>我们可以看到，购物网站下有翻页功能，可以用无序列表加浮动来制作，这里我们介绍一个利用行内块元素特性所制作的方法。</p>
+<img src="./img/行内块元素特性的妙用.jpg" alt="" style="width:800px">
+<p></p>
+<a href="./textes/行内块元素的巧妙运用.html" target="_blank">--实例--</a>
+<p>源码</p>
+<textarea cols="100" rows="94" readonly="readonly">
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>行内块元素的巧妙运用</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .hd {
+        height: 80px;
+        width: 600px;
+        margin: 0 auto;
+        background-color: pink;
+      }
+
+      .box {
+        /* 只要给父亲添加居中，里面的所有行内块元素会自动居中 */
+        /* 非常方便 */
+        text-align: center;
+      }
+      .box a {
+        /* 先转换为行内块元素 */
+        display: inline-block;
+        /* 设置格式 */
+        height: 36px;
+        width: 36px;
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+        /* 设置居中 */
+        line-height: 36px;
+        text-align: center;
+        /* 删除下划线 */
+        text-decoration: none;
+        /* 设置颜色 */
+        color: #333;
+        font-size: 14px;
+      }
+      .box .prev,
+      .box .next {
+        width: 90px;
+      }
+      /* 用以个input代替 */
+      .box input {
+        outline: 0;
+        height: 25px;
+        width: 30px;
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+      /* 确定按钮 */
+      .box button {
+        height: 36px;
+        width: 36px;
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hd">
+      <p>1.创建一个盒子，放上a链接，显示模式设为行内块元素,再设置格式尺寸等</p>
+      <p>
+        2.给a内容的父盒子加上 text-align: center;
+        各行内块元素可以自动居中，很方便
+      </p>
+      <p>
+        3.第-页中间用表单的text元素，设置样式，确定 是个button按钮，设置格式。
+      </p>
+      <p>即可完成，详情查看源码</p>
+    </div>
+    <div class="box">
+      <a href="" class="prev">&lt;&lt;上一页</a>
+      <a href="">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="">5</a>
+      <a href="">6</a>
+      <span>--</span>
+      <a href="" class="next">下一页&gt;&gt;</a>
+      <span>共6页&nbsp;到第</span>
+      <input type="text" />
+      <span>页</span>
+      <button>确定</button>
+    </div>
+  </body>
+</html>
+
+ </textarea>
+</div>
+<!-- 行内块元素的巧妙运用结束 -->
+
+<!-- css三角的巧妙应用开始 -->
+<div>
+<a name="css_triangle_use"></a>
+<p class="subtitle">[4]css三角的巧妙应用</p>
+<p>在上一章我们学会了如何制作一个三角形,这章我们学习一个巧妙使用三角形的案例。如下图:</p>
+<img src="./img/巧妙使用三角形1.jpg" alt="css三角的巧妙应用">
+<p class="img_footer">该截图来源于京东</p>
+<p class="subtitle-a">[A]制作一个直角三角形</p>
+
+<textarea cols="100" rows="15" readonly="readonly">
+  <style>
+.box1 {
+    width:0;
+    height:0;
+    /*1.只保留右边框有颜色*/
+    /*顺序：上 右 下 左*/
+    border-color: transparent red transparent transparent;
+    /*2.样式都是solid*/
+    border-style: solid;
+    /*3.上边框宽度要大，右边框宽度稍小，其余的边框为0*/
+    border-width: 100px 50px 0 0;
+  }
+  </style>
+  <div class="box1"></div>
+ </textarea>
+
+ <p class="subtitle-a">[B]制作京东价格秒杀样式</p>
+ <a href="https://www.bilibili.com/video/BV14J4114768?p=271&spm_id_from=pageDriver" target="_blank">视频教程</a>
+ <p></p>
+ <a href="./textes/三角形的巧妙应用.html" target="_blank">--实例--</a>
+ <p>源码:</p>
+ <textarea cols="100" rows="79" readonly="readonly">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>doc</title>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        /* 整体盒子 */
+        .price {
+          /* 高和宽 */
+          width: 200px;
+          height: 24px;
+          /* 边框样式 */
+          border: 1px solid red;
+          /* 居中 */
+          margin: 0 auto;
+          /* 文字居中 */
+          line-height: 24px;
+          text-align: center;
+        }
+        /* 秒杀价格模块 */
+        .miaosha {
+          /* 子绝父相，三角形是绝对定位 */
+          position: relative;
+          /* 设置浮动，右边的价格会自动围绕浮动盒子显示 */
+          float: left;
+          width: 120px;
+          /* 高度和父盒子一样 */
+          height: 100%;
+          background-color: red;
+          /* 文字居中 */
+          line-height: 24px;
+          text-align: center;
+          /* 字体粗一点 */
+          font-weight: 700;
+          /* 颜色 */
+          color: white;
+        }
+        /* 用i标签制作三角形 */
+        .miaosha i {
+          /* 子绝父相 */
+          position: absolute;
+          top: 0;
+          right:0px;
+          /* 制作三角形 */
+          width: 0;
+          height: 0;
+          /* 只要右边的颜色 */
+          border-color: transparent #fff transparent transparent;
+          /* 都为实线 */
+          border-style: solid;
+          /* 设置大小 */
+          border-width: 24px 10px 0 0;
+        }
+        /* 右边的原价格 */
+        .origin{
+          /* 字体样式 */
+          font-size: 12px;
+          color:gray;
+          /* 添加删除线 */
+          text-decoration: line-through;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="price">
+        <span class="miaosha">
+          ￥11749.00
+          <i></i>
+        </span>
+        <span class="origin">2299.00</span>
+      </div>
+    </body>
+  </html>
+  
+
+ </textarea>
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+<!-- 第三章 HTML5+CSS3的应用 -->
+<div>
+<h1>第三章 HTML5+CSS3的应用</h1>
+<a name="chapter-3"></a>
+
+
+
+
+
+</div>
+
+
+   </div>
+
+    <div id="footer">
+      <div class="ft-contant clearfix">
+        <div class="ft-box">
+<h4>HTML</h4>
+<a href="../html笔记网页版/index.html" target="_blank">html笔记</a>
+<a href="" target="_blank"></a>
+<a href="" target="_blank"></a>
+        </div>
+        <div class="ft-box">
+<h4>CSS</h4>
+<a href="https://www.bilibili.com/video/BV14J4114768?p=259" target="_blank">pink老师</a>
+<a href="https://space.bilibili.com/474760716/?spm_id_from=333.999.0.0" target="_blank">艾编程</a>
+<a href="" target="_blank"></a>
+        </div>
+        <div class="ft-box">
+<h4>关于作者</h4>
+<a href="https://blog.csdn.net/weixin_57921210?spm=1000.2115.3001.5343" target="_blank">CSDN主页</a>
+<a href="https://space.bilibili.com/472172487?spm_id_from=333.1007.0.0" target="_blank">bilibili主页</a>
+<p>联系邮箱:a3066684712@163.com</p>
+        </div>
+      </div>
+
+      
+    </div>
+  </body>
+</html>
