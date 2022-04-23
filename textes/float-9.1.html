@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>为什么需要浮动</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .text-1 {
+        border: 1px solid blue;
+        width: 200px;
+        /* float:left; */
+      }
+      .one {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+      }
+      .tow {
+        height: 200px;
+        width: 200px;
+        background-color: skyblue;
+      }
+      .there {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+      }
+      .text-2 {
+        border: 1px solid blue;
+        width: 650px;
+        height: 200px;
+      }
+      .one-1 {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+        float: left;
+      }
+      .tow-1 {
+        height: 200px;
+        width: 200px;
+        background-color: skyblue;
+        float: left;
+      }
+      .there-1 {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+        /* float:right; */
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-1">
+      未浮动：标准流
+      <div class="one">1</div>
+      <div class="tow">2</div>
+      <div class="there">3</div>
+    </div>
+    <div class="text-2">
+        浮动后
+        
+      <div class="one-1">1</div>
+      <div class="tow-1">2</div>
+      <div class="there-1">3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,315 @@
+/* 整体样式设置 */
+
+* {
+  /* height: 100%; */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+body {
+  font-size: 14px;
+  /* background-image: url(img/bg1.jpg); */
+  background-size: 100% 100%;
+  background: no-repeat;
+  background-color: rgba(200, 241, 85, 0.2);
+}
+
+#header input {
+  outline: none;
+  outline-color: pink;
+}
+textarea {
+  outline: none;
+  /* white-space: none; */
+  font-size: 14px;
+  resize: none;
+  border-color: #e6ca5e;
+  border: 3px dashed #bb9600;
+  border-radius: 5px;
+  background-color: rgba(255, 166, 0, 0.103);
+  padding: 8px;
+  /* color:white; */
+}
+
+h1,
+h3,
+li,
+p {
+  cursor: default;
+}
+
+.w {
+  width: 1050px;
+}
+
+/* 回到顶部按钮 */
+.totop ul {
+  position: fixed;
+  /* left: 50%; */
+  top: 310px;
+  right: 10px;
+  /* margin-left: 560px; */
+  list-style: none;
+}
+.totop li {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  background-color: #e6cb5e3d;
+  border: 1px solid rgba(0, 0, 0, 0.207);
+  padding: 5px;
+}
+.totop li span {
+  font-size: 26px;
+  /* text-align: center; */
+  width: 30px;
+  height: 30px;
+  /* background-color: white; */
+  /* 转换为块级元素才能设置高度和背景 */
+  display: inline-block;
+  /* 设置图标大小和颜色 */
+  font-size: 28px;
+  color: #666;
+  /* 设置图标水平垂直均居中 */
+  text-align: center;
+  line-height: 40px;
+  margin-left: 15px;
+}
+.totop li p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.totop li a {
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.totop li a:hover {
+  color: orange;
+}
+/* .totop li a {
+  font-size: 40px;
+  text-align: center; */
+/* margin-left:15px; */
+/* margin: 0px 0px 0px 0px;
+  margin-left: 7px;
+  line-height: 40px;
+} */
+
+/* 公告隐身部分 */
+.totop li .gonggao {
+  position: absolute;
+  left: -260px;
+  top: -150px;
+  border-radius: 15px;
+  border: 1px solid black;
+  height: 400px;
+  width: 253px;
+  background-color: #d5d4ce8a;
+  display: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+/* 移动到上面时公告自动出来 */
+.totop ul li:hover .gonggao {
+  display: block;
+}
+.gonggao {
+  /* background-image: url(./img/bg-2.gif); */
+  /* background-color: #e6ca5e; */
+}
+
+.gonggao p {
+  color: black;
+  line-height: 20px;
+}
+
+.gonggao img {
+  height: 100px;
+  width: 100px;
+  margin-left: 55px;
+  margin-bottom: 0px;
+}
+
+/* 页头 */
+#header {
+  height: 100px;
+  /* width: 1500px; */
+  background-color: rgba(241, 207, 72, 0.712);
+  background-image: url(./img/logo（1）.png);
+  /* background-image: url(./img/bg-2.gif); */
+  /* background-size: 100% 100%; */
+  background-repeat: no-repeat;
+  background-position: 35px -70px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  overflow-x: hidden;
+}
+#header input {
+  margin-top: 40px;
+  width: 256px;
+  height: 28px;
+  background: #fdfdfd;
+  font: 12px Verdana, Arial, Helvetica, sans-serif;
+  border: 1px solid #ddd;
+  margin-left: 1000px;
+}
+
+/* 顶部导航栏 */
+
+#nav_first {
+/* position: sticky; */
+  /* top:0px; */
+  /* 导航栏高41px */
+  height: 41px;
+  /* 设置导航栏边框样式 */
+  border: 1px solid #f1f1f1;
+
+  /* 设置背景颜色 */
+  background-color: #fcfcfc;
+  /* 文字居中 */
+  line-height: 41px;
+
+  overflow: hidden;
+  z-index: 2;
+}
+/* 设置文字样式 */
+#nav_first a {
+  /* a属于行元素，没有高度，所以将a转换为行内块元素。
+       */
+
+  display: inline-block;
+  /* 设置padding */
+  padding: 0px 20px;
+  /* 文字演示 */
+  font-size: 16px;
+  color: #4c4c4c;
+  /* 删除下划线 */
+  text-decoration: none;
+  /* float:left; */
+}
+/* 设置鼠标经过时改变颜色 */
+#nav_first a:hover {
+  background: #eee;
+  color: #dd86289f;
+}
+
+/* 知识点导航栏 */
+#nav_tow {
+  position: sticky;
+  top:10px;
+  z-index: 1;
+  width: 200px;
+  height: auto;
+  border: 2px solid rgb(235, 231, 38);
+  margin-top: 30px;
+  margin-left: 30px;
+  float: left;
+  /* padding: 20px 30px; */
+  border-radius: 2px;
+}
+#nav_tow ul li {
+  list-style: none;
+}
+
+#nav_tow ul {
+  position: relative;
+
+}
+
+#nav_tow a {
+  /* 转换为块级元素 */
+  display: block;
+  /* 长方形的比例 */
+  width: 200px;
+  height: 25px;
+
+  /* 背景颜色 */
+  background-color: #e9e9e9;
+  /* 字体颜色 */
+  color: rgb(182, 150, 150);
+  /* 取消下划线 */
+  text-decoration: none;
+  /* 字体前的空格 */
+  text-indent: 1em;
+  /* 设置文本居中 */
+  /* 如果行高等于盒子的高度就可以实现文字垂直居中的效果 */
+  line-height: 25px;
+  float: left;
+}
+/* 2.鼠标经过链接变换背景颜色 */
+#nav_tow a:hover {
+  background-color: #e6ca5e;
+  font-weight: bold;
+  color: rgb(38, 38, 38);
+}
+
+/* 正文内容 */
+#main {
+  height: auto;
+  width: 1050px;
+  border: 1px solid #e6ca5e;
+  margin-left: 250px;
+  margin-top: 30px;
+  background-color: #eed9934f;
+
+  /* overflow-x: hidden; */
+  border-radius: 10px;
+  padding-bottom: 40px;
+}
+
+#main .csstext {
+  /* border-bottom: 1px solid rgb(214, 55, 82, 0.3); */
+
+  border-radius: 10px;
+}
+
+.csstext a {
+  /* list-style:none; */
+  text-decoration: none;
+}
+/* 内容整体偏移 */
+.csstext {
+  padding: 30px 40px;
+}
+
+/* 页脚 */
+#footer {
+  position: relative;
+  z-index: 2;
+  height: 200px;
+  background-color: rgb(248, 215, 87);
+  margin-top: 10px;
+}
+
+.ft-contant {
+  height: 150px;
+  width: 1050px;
+  /* background-color: #ddd; */
+  margin: 0 auto;
+}
+.ft-contant .ft-box {
+  height: 90px;
+  width: 250px;
+  /* background-color: pink; */
+  float: left;
+  margin-left: 60px;
+  padding: 20px;
+}
+.ft-contant .ft-box h4 {
+  font-size: 20px;
+}
+.ft-contant .ft-box a {
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+}
+.ft-contant .ft-box a:hover {
+  text-decoration: solid;
+}

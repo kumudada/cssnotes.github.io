@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字环绕图片显示</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: gray;
+      }
+      .box1 {
+        height: 80px;
+        width: 250px;
+        background-color: white;
+        padding: 5px;
+        margin: 0 auto;
+      }
+      .imges {
+        height: 80px;
+        width: 120px;
+        /* 给封面的盒子加上左浮动就可以实现文字围绕盒子显示 */
+        float: left;
+        margin-right:5px;
+      }
+      .imges img {
+        height: 80px;
+        width: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="imges">
+        <img src="../img/0.jpg" alt="" />
+      </div>
+      <p>互联网显示IP属地，“震”得了饭圈吗？</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <pre>
+      css文本格式的设置：
+
+      (1)属性：font-family属性
+      用途：可以设置文本的字体（必须是系统有的字体）
+      
+      例：h1 {font-family: Georgia;}设置h1标签的字体为Georgia
+      如果没有Georgia字体，那么可以依次设置多个字体，系统会从字体1开始选择，
+      如果没有1，那么继续试2，直到找到可用的字体停止。
+      h1 {font-family: Georgia,微软雅黑,黑体;}
+      
+      注意：字体名称最好用英文名
+           如果字体名称中带有特殊符号，将名称用'' （单引号）引住
+      
+      (2)属性：font-style属性
+      用途：可以设置文本的样式（粗体，下划线等）
+      值：1.normal - 文本正常显示
+          2.italic - 文本斜体显示
+         3.oblique - 文本倾斜显示(2和3视觉效果上是一样的，意义不同)
+      斜体（italic）是一种简单的字体风格，对每个字母的结构有一些小改动，来反映变化的外观。与此不同，
+      倾斜（oblique）文本则是正常竖直文本的一个倾斜版本。
+      
+      (3)属性：font-weight属性
+      用途：可以设置文本粗细
+      值：1.100~~900 一共9级一级比一级粗
+         2.bold可以直接设置为粗体
+      
+      (4)属性：font-size属性
+      用途：可以设置文本大小
+      值：1.谷歌浏览器默认16px
+         2.最常用的单位是px(像素)
+         3.浏览器不同默认的字号不一样，做好设置一个明确的大小，不用默认大小。
+         4.h标签不可以用body{}一键设置,需要单独设置。
+      p{
+      font-size: 20px;
+      }
+   </pre>
+</body>
+</html>

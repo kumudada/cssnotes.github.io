@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Margin负值应用</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .clearfix:after {
+        content: "";
+        /* 内容设置为空 */
+        display: block;
+        /* 更改为块级元素 */
+        height: 0;
+        clear: both;
+        /* 设置清除 */
+        visibility: hidden;
+        /* 高级隐藏盒子 */
+      }
+      .clearfix {
+        /* IE6~7专有 */
+        *zoom: 1;
+      }
+
+      .boxfather {
+        height: 70px;
+        background-color: antiquewhite;
+      }
+
+      .box1 {
+        height: 300px;
+        width: 900px;
+        background-color: rgba(255, 192, 203, 0.566);
+        margin: 0 auto;
+      }
+      .box2 {
+        height: 300px;
+        width: 900px;
+        background-color: rgba(135, 207, 235, 0.511);
+        margin: 0 auto;
+      }
+      .box1 ul {
+        list-style: none;
+      }
+      .box1 ul li {
+        height: 200px;
+        width: 200px;
+        border: 1px solid red;
+        float: left;
+      }
+      .box2 ul {
+        list-style: none;
+      }
+      .box2 ul li {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        border: 1px solid red;
+        float: left;
+        margin-left: -1px;
+      }
+      .box2 ul li:hover {
+        /* 鼠标经过时，通过大li的定位和z-index 来提高层级，使其压过另一个边框 */
+        z-index: 1;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxfather">
+      我们可以看到，第一个盒子每个li之间的边框都重叠了，而第二个没有，因为第二个的li设置了margin-left:
+      -1px; 的样式，利用margin的负值解决盒子之间边框重合的问题。
+      <br />
+      边框的宽度是1px solid red ;
+      这个样式可以应用于淘宝中每个商品盒子之间的边框样式，可以解决边框重合问题，使其更加美观。第二个盒子还设置了个hover。
+    </div>
+    <div class="box1 clearfix">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </div>
+    <div class="box2 clearfix">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </div>
+  </body>
+</html>

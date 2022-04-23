@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>行内块元素的巧妙运用</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .hd {
+        height: 80px;
+        width: 600px;
+        margin: 0 auto;
+        background-color: pink;
+      }
+
+      .box {
+        /* 只要给父亲添加居中，里面的所有行内块元素会自动居中 */
+        /* 非常方便 */
+        text-align: center;
+      }
+      .box a {
+        /* 先转换为行内块元素 */
+        display: inline-block;
+        /* 设置格式 */
+        height: 36px;
+        width: 36px;
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+        /* 设置居中 */
+        line-height: 36px;
+        text-align: center;
+        /* 删除下划线 */
+        text-decoration: none;
+        /* 设置颜色 */
+        color: #333;
+        font-size: 14px;
+      }
+      .box .prev,
+      .box .next {
+        width: 90px;
+      }
+      /* 用以个input代替 */
+      .box input {
+        outline: 0;
+        height: 25px;
+        width: 30px;
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+      /* 确定按钮 */
+      .box button {
+        height: 36px;
+        width: 36px;
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hd">
+      <p>1.创建一个盒子，放上a链接，显示模式设为行内块元素,再设置格式尺寸等</p>
+      <p>
+        2.给a内容的父盒子加上 text-align: center;
+        各行内块元素可以自动居中，很方便
+      </p>
+      <p>
+        3.第-页中间用表单的text元素，设置样式，确定 是个button按钮，设置格式。
+      </p>
+      <p>即可完成，详情查看源码</p>
+    </div>
+    <div class="box">
+      <a href="" class="prev">&lt;&lt;上一页</a>
+      <a href="">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="">5</a>
+      <a href="">6</a>
+      <span>--</span>
+      <a href="" class="next">下一页&gt;&gt;</a>
+      <span>共6页&nbsp;到第</span>
+      <input type="text" />
+      <span>页</span>
+      <button>确定</button>
+    </div>
+  </body>
+</html>

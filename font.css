@@ -1,0 +1,71 @@
+h3 {
+  color: blue;
+}
+
+body {
+  font-family: "幼圆";
+  line-height: 35px;
+}
+
+.branch_nav a {
+  text-indent: 9em;
+}
+/* 公告栏样式 */
+#Notice_right p {
+  font-size: 13px;
+  line-height: 15px;
+}
+/* 字体标红 */
+body .tored {
+  color: red;
+}
+
+#main .subtitle {
+  font-size: 16px;
+  /* font-style:initial; */
+  text-decoration: underline;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+#main .subtitle-a {
+  font-size: 16px;
+  font-style: italic;
+  /* text-decoration: underline; */
+  font-weight: 600px;
+  /* line-height: 70px; */
+}
+/* 字体加重 */
+.tobig {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* 字体加重 */
+.aggravate {
+  font-weight: bold;
+}
+/* 表格统一设计 */
+#container table {
+  margin:5px;
+  text-align: center;
+  /* font-weight: ; */
+  height: 140px;
+  /* font-weight: 400px; */
+  border:1px solid black;
+}
+
+/* 行内块元素标签 */
+.span{
+  display: inline-block;
+}
+/* 图片的脚注 */
+.img_footer {
+  font-size: 12px;
+  margin-left:50px;
+  line-height: 12px;
+}

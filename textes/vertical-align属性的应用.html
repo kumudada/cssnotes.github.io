@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vertical-align属性的应用</title>
+  </head>
+  <style>
+    .clearfix:after {
+      content: "";
+      /* 内容设置为空 */
+      display: block;
+      /* 更改为块级元素 */
+      height: 0;
+      clear: both;
+      /* 设置清除 */
+      visibility: hidden;
+      /* 高级隐藏盒子 */
+    }
+    .clearfix {
+      /* IE6~7专有 */
+      *zoom: 1;
+    }
+    ul {
+      list-style: none;
+    }
+    ul li {
+      height: 350px;
+      width: 350px;
+      background-color: pink;
+      border: 1px solid black;
+      float: left;
+    }
+    img{
+        height:200px;
+        /* vertical-align:baseline; */
+    }
+    p{
+        display:inline-block;
+    }
+
+    .img-1 img{
+         vertical-align:baseline;
+    }
+    .img-2 img{
+         vertical-align:top;
+    }
+    .img-3 img{
+         vertical-align:middle;
+    }
+    .img-4 img{
+         vertical-align:bottom;
+    }
+  </style>
+  <body>
+    <div class="clearfix">
+      <ul>
+        <li class="img-1">
+          <img src="../img/liudehua.jpeg" alt="" />
+          刘德华 liudehua
+        </li>
+        <li class="img-2">
+            <img src="../img/liudehua.jpeg" alt="" />
+            刘德华 liudehua
+          </li>
+          <li class="img-3">
+            <img src="../img/liudehua.jpeg" alt="" />
+            刘德华 liudehua
+          </li>
+          <li class="img-4">
+            <img src="../img/liudehua.jpeg" alt="" />
+            <p>刘德华 liudehua</p>
+          </li>
+      </ul>
+    </div>
+  </body>
+</html>
+l

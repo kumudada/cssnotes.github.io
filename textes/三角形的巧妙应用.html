@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>doc</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* 整体盒子 */
+      .price {
+        /* 高和宽 */
+        width: 200px;
+        height: 24px;
+        /* 边框样式 */
+        border: 1px solid red;
+        /* 居中 */
+        margin: 0 auto;
+        /* 文字居中 */
+        line-height: 24px;
+        text-align: center;
+      }
+      /* 秒杀价格模块 */
+      .miaosha {
+        /* 子绝父相，三角形是绝对定位 */
+        position: relative;
+        /* 设置浮动，右边的价格会自动围绕浮动盒子显示 */
+        float: left;
+        width: 120px;
+        /* 高度和父盒子一样 */
+        height: 100%;
+        background-color: red;
+        /* 文字居中 */
+        line-height: 24px;
+        text-align: center;
+        /* 字体粗一点 */
+        font-weight: 700;
+        /* 颜色 */
+        color: white;
+      }
+      /* 用i标签制作三角形 */
+      .miaosha i {
+        /* 子绝父相 */
+        position: absolute;
+        top: 0;
+        right:0px;
+        /* 制作三角形 */
+        width: 0;
+        height: 0;
+        /* 只要右边的颜色 */
+        border-color: transparent #fff transparent transparent;
+        /* 都为实线 */
+        border-style: solid;
+        /* 设置大小 */
+        border-width: 24px 10px 0 0;
+      }
+      /* 右边的原价格 */
+      .origin{
+        /* 字体样式 */
+        font-size: 12px;
+        color:gray;
+        /* 添加删除线 */
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="price">
+      <span class="miaosha">
+        ￥11749.00
+        <i></i>
+      </span>
+      <span class="origin">2299.00</span>
+    </div>
+  </body>
+</html>

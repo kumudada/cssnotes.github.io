@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>doc</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main ul {
+        position: relative;
+        list-style: none;
+        text-align: center;
+      }
+
+      .main ul li {
+        height: 25px;
+        width: 150px;
+        background-color: pink;
+        border: 1px solid gray;
+        /* padding:0px 0px 5px 5px; */
+        font-size: 14px;
+      }
+      .main ul a {
+        text-decoration: none;
+        line-height: 25px;
+        /* text-align: center; */
+        color: white;
+      }
+      .main ul li:hover a {
+        color: black;
+      }
+
+      .main ul li ul {
+        position: absolute;
+        left: 150px;
+        /* top: 0px; */
+        display: none;
+      }
+      .main ul li ul li:hover a {
+        color: orange;
+      }
+
+      .main ul li:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="meun">
+      <div class="main">
+        <ul>
+          <li>
+            <a href="#">纵向一级导航栏</a>
+            <ul class="nav-son">
+              <li><a href="#">纵向二级导航栏</a></li>
+              <li><a href="#">纵向二级导航栏</a></li>
+              <li><a href="#">纵向二级导航栏</a></li>
+              <li><a href="#">纵向二级导航栏</a></li>
+              <li><a href="#">纵向二级导航栏</a></li>
+            </ul>
+          </li>
+          <li><a href="#">纵向一级导航栏</a></li>
+          <li><a href="#">纵向一级导航栏</a></li>
+          <li><a href="#">纵向一级导航栏</a></li>
+          <li><a href="#">纵向一级导航栏</a></li>
+          <li><a href="#">纵向一级导航栏</a></li>
+          <li>
+            <a href="#">纵向一级导航栏</a>
+            <ul class="nav-son">
+              <li><a href="#">纵向二级导航栏</a></li>
+              <li><a href="#">纵向二级导航栏</a></li>
+              <li><a href="#">纵向二级导航栏</a></li>
+              <li><a href="#">纵向二级导航栏</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <script>
+      alert("子绝父相，链接伪类选择器,无序列表 ，复合选择器");
+    </script>
+  </body>
+</html>

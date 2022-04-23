@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王者荣耀官网背景</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        /* 插入图片 */
+        background-image: url(../img/background1.jpg);
+        /* 不重复 */
+        background-repeat: no-repeat;
+        /* 实现图片垂直居中 */
+        background-position: center 0px;
+        background-attachment: fixed;
+      }
+      .w {
+        width: 1200px;
+      }
+      /* 页头 */
+      .header {
+        /* position:fixed; */
+        height: 41px;
+        background-color: pink;
+      }
+      /* 内容 */
+      .main {
+        height: 2000px;
+        width: 1200px;
+        background-color: rgba(255, 192, 203, 0.466);
+        margin: 10px auto;
+        margin-top: 60px;
+      }
+      /* 页脚 */
+      .footer {
+        height: 300px;
+        background-color: skyblue;
+      }
+      /* 右侧固定二维码 */
+      .fixed-text-1 {
+        position: fixed;
+        right: 50%;
+        top:200px;
+        margin-right: -750px;
+        height: 110px;
+        width: 110px;
+        background-color: aquamarine;
+      }
+      .fixed-text-1 img{
+        height:100%;
+        width:100%;
+      }
+      .fixed-text-2{
+        /* 小技巧：返回顶部按钮 */
+        position: fixed;
+        left:50%;
+        margin-left:600px;
+        margin-top:25%;
+        /* 设置基本格式 */
+        height: 60px;
+        width: 60px;
+        background-color: pink;
+        border-radius: 50%;
+
+      }
+      .fixed-text-2 img{
+        height: 100%;
+        width:100%;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">页头</div>
+    <div class="main w">
+      内容
+      <div class="fixed-text-2">
+        <a href="#"><img src="../img/回到顶部.jpeg" alt="">
+        </div></a>
+    </div>
+    <!-- https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/r_code.jpg -->
+    >
+    <div class="fixed-text-1"><img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/r_code.jpg" alt=""></div>
+    <div class="footer">页脚</div>
+  </body>
+</html>
